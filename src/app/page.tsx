@@ -15,6 +15,9 @@ import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import MyContainer from "@/components/ui/my-container";
 import MyLink from "@/components/ui/my-link";
+import { Features } from "@/components/features";
+import MyPadding from "@/components/ui/my-padding";
+import CertificateItems from "@/components/Certificate";
 
 export default async function HomePage() {
   const cookieStore = await cookies();
@@ -81,6 +84,28 @@ export default async function HomePage() {
           </div>
         </div>
       </MyContainer>
+
+      {/* Certificate */}
+      <MyContainer>
+        <SectionHeading
+          title={t.trustTitle}
+          description="Harvard alumni and key figures of the American Revolution, John Adams, Samuel Adams, and John Hancock, all signed the Declaration of Independence."
+          link={{ href: "#", label: "Learn about their journey to signing the document" }}
+        />
+        <CertificateItems items={t.trustItems.map((item: { title: string; description: string }) => ({ title: item.title, description: item.description }))} />
+      </MyContainer>
+
+      {/* Dont delete this section, it is used for testing the padding component */}
+      {/*
+       <MyPadding>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
+          <SectionHeading
+            title="Dibangun untuk Standar Tertinggi"
+            description="Banyak program sekadar memberi sertifikat. Sertifikasi Hafiz dirancang untuk bagian yang membuat keluarga dan lembaga mengakui kualitas hafalan Anda."
+          />
+        </div>
+        <Features />
+      </MyPadding> */}
 
 
       {/* Available Programs */}

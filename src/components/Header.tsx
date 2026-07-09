@@ -42,22 +42,17 @@ export default function Header({ lang }: HeaderProps) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        transparent
-          ? "bg-transparent text-warm-white"
-          : "bg-warm-white/95 backdrop-blur border-b border-charcoal/10 text-charcoal"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${transparent
+        ? "bg-transparent"
+        : "bg-surface text-background"
+        }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-maroon rounded flex items-center justify-center">
-              <span className="text-warm-white text-xs font-bold">ID</span>
-            </div>
             <span
-              className={`font-heading text-xl font-semibold hidden sm:inline transition-colors ${
-                transparent ? "text-warm-white" : "text-maroon"
-              }`}
+              className={`font-heading text-xl font-semibold hidden sm:inline transition-colors ${transparent ? "text-warm-white" : "text-maroon"
+                }`}
             >
               International.degree
             </span>
@@ -68,15 +63,14 @@ export default function Header({ lang }: HeaderProps) {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-base font-medium transition-colors focus-visible:outline-none ${
-                  isActive(link.href)
-                    ? transparent
-                      ? "text-warm-white"
-                      : "text-maroon"
-                    : transparent
-                      ? "text-warm-white/70 hover:text-warm-white"
-                      : "text-charcoal/70 hover:text-maroon"
-                }`}
+                className={`text-base font-medium transition-colors focus-visible:outline-none ${isActive(link.href)
+                  ? transparent
+                    ? "text-warm-white"
+                    : "text-maroon"
+                  : transparent
+                    ? "text-warm-white/70 hover:text-warm-white"
+                    : "text-charcoal/70 hover:text-maroon"
+                  }`}
               >
                 {link.label}
               </Link>
@@ -96,9 +90,8 @@ export default function Header({ lang }: HeaderProps) {
           </nav>
 
           <button
-            className={`md:hidden p-2 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-maroon ${
-              transparent ? "hover:bg-warm-white/10" : "hover:bg-charcoal/5"
-            }`}
+            className={`md:hidden p-2 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-maroon ${transparent ? "hover:bg-warm-white/10" : "hover:bg-charcoal/5"
+              }`}
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >
@@ -117,9 +110,8 @@ export default function Header({ lang }: HeaderProps) {
 
       {mobileOpen && (
         <div
-          className={`md:hidden border-t ${
-            transparent ? "border-warm-white/20 bg-burgundy/95" : "border-charcoal/10 bg-warm-white"
-          }`}
+          className={`md:hidden border-t ${transparent ? "border-warm-white/20 bg-burgundy/95" : "border-charcoal/10 bg-warm-white"
+            }`}
         >
           <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) => (
@@ -127,15 +119,14 @@ export default function Header({ lang }: HeaderProps) {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className={`block text-lg font-medium py-2 transition-colors ${
-                  isActive(link.href)
-                    ? transparent
-                      ? "text-warm-white"
-                      : "text-maroon"
-                    : transparent
-                      ? "text-warm-white/70 hover:text-warm-white"
-                      : "text-charcoal/70 hover:text-maroon"
-                }`}
+                className={`block text-lg font-medium py-2 transition-colors ${isActive(link.href)
+                  ? transparent
+                    ? "text-warm-white"
+                    : "text-maroon"
+                  : transparent
+                    ? "text-warm-white/70 hover:text-warm-white"
+                    : "text-charcoal/70 hover:text-maroon"
+                  }`}
               >
                 {link.label}
               </Link>

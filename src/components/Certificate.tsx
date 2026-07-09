@@ -1,15 +1,15 @@
-interface TrustItem {
+interface CertificateItem {
   title: string;
   description: string;
 }
 
-interface TrustItemsProps {
-  items: TrustItem[];
+interface CertificateItemsProps {
+  items: CertificateItem[];
 }
 
-export default function TrustItems({ items }: TrustItemsProps) {
+export default function CertificateItems({ items }: CertificateItemsProps) {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-background">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-background">
       {items.map((item, index) => (
         <div key={index} className="bg-surface">
           <div className="w-full aspect-video bg-test">
