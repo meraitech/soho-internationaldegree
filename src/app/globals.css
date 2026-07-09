@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "CanelaMediumTrial";
+  src: url("./../../public/assets/fonts/Canela-Medium-Trial.otf");
+}
+
+@theme {
+  --color-test: #666666;
+
+  --color-background: #1b2136;
+  --color-foreground: #e3e5e5;
+
+  --color-surface: #e3e5e5;
+
+  --font-heading: "CanelaMediumTrial";
+  --font-body: "Inter", "Source Sans 3", Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+  }
+
+  h3 {
+    font-size: var(--text-3xl); /* 1.125rem (18px) */
+    line-height: var(--text-3xl--line-height); /* calc(1.75 / 1.125) */
+  }
+}
