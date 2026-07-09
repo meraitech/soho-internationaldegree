@@ -1,11 +1,8 @@
-import { link } from "fs";
-import Link from "next/link";
-import { FaArrowRightLong } from "react-icons/fa6";
 import MyLink from "./ui/my-link";
 
 interface SectionHeadingProps {
   title: string;
-  description: string;
+  description?: string;
   link?: { href: string; label: string };
 }
 
@@ -16,9 +13,9 @@ export default function SectionHeading({ title, description, link }: SectionHead
         {title}
       </h2>
       <div className="flex flex-col max-md:text-sm gap-2">
-        <p className="">
-          {description}
-        </p>
+        {description && (
+          <p>{description}</p>
+        )}
         {link && (
           <MyLink link={link} />
         )}

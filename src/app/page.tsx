@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { cookies } from "next/headers";
 import type { Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
@@ -15,9 +14,9 @@ import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import MyContainer from "@/components/ui/my-container";
 import MyLink from "@/components/ui/my-link";
-import { Features } from "@/components/features";
 import MyPadding from "@/components/ui/my-padding";
 import CertificateItems from "@/components/Certificate";
+import { certificates } from "@/data/certificates";
 
 export default async function HomePage() {
   const cookieStore = await cookies();
@@ -35,7 +34,7 @@ export default async function HomePage() {
       >
         <div className="absolute inset-0 bg-background opacity-60" />
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-background via-transparent pointer-events-none" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-20 pb-16 w-full">
+        <div className="relative z-10 max-w-360 mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-20 pb-16 w-full">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
             <h1 className="text-3xl md:text-4xl lg:text-6xl font-heading mb-6">
               {t.heroHeadline}
@@ -86,27 +85,15 @@ export default async function HomePage() {
       </MyContainer>
 
       {/* Certificate */}
-      <MyContainer>
-        <SectionHeading
-          title={t.trustTitle}
-          description="Harvard alumni and key figures of the American Revolution, John Adams, Samuel Adams, and John Hancock, all signed the Declaration of Independence."
-          link={{ href: "#", label: "Learn about their journey to signing the document" }}
-        />
-        <CertificateItems items={t.trustItems.map((item: { title: string; description: string }) => ({ title: item.title, description: item.description }))} />
-      </MyContainer>
-
-      {/* Dont delete this section, it is used for testing the padding component */}
-      {/*
-       <MyPadding>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
+      <MyPadding>
+        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
           <SectionHeading
-            title="Dibangun untuk Standar Tertinggi"
-            description="Banyak program sekadar memberi sertifikat. Sertifikasi Hafiz dirancang untuk bagian yang membuat keluarga dan lembaga mengakui kualitas hafalan Anda."
+            title={t.certificateTitle}
+            description={t.certificateDescription}
           />
         </div>
-        <Features />
-      </MyPadding> */}
-
+        <CertificateItems items={certificates} lang={lang} />
+      </MyPadding>
 
       {/* Available Programs */}
       <MyContainer>

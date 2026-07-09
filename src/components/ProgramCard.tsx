@@ -15,7 +15,7 @@ export default function ProgramCard({ program, lang, viewLabel = "View Programs"
   );
 
   return (
-    <div className="bg-white border border-charcoal/10 rounded-lg p-6 flex flex-col hover:shadow-md transition-shadow">
+    <div className="bg-surface text-background border p-6 flex flex-col hover:shadow-md transition-shadow">
       <span className="text-xs font-semibold uppercase tracking-wider text-gold mb-2">
         {program.category}
       </span>

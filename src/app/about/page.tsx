@@ -56,7 +56,7 @@ export default async function AboutPage() {
       {/* Our Story */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading title={t.storyTitle} centered={false} />
+          <SectionHeading title={t.storyTitle}  />
           <p className="mt-6 text-lg text-charcoal/70 leading-relaxed">
             {t.storyContent}
           </p>
@@ -66,7 +66,7 @@ export default async function AboutPage() {
       {/* Our Role */}
       <section className="py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading title={t.roleTitle} centered={false} />
+          <SectionHeading title={t.roleTitle}  />
           <ul className="mt-8 space-y-4">
             {t.roleList.map((item: string, index: number) => (
               <li key={index} className="flex items-start gap-3">
@@ -81,7 +81,7 @@ export default async function AboutPage() {
       {/* Our Process */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading title={t.processTitle} centered={false} />
+          <SectionHeading title={t.processTitle}  />
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
             {t.processSteps.map((step: string, index: number) => (
               <div key={index} className="flex gap-4 items-start">
@@ -98,7 +98,7 @@ export default async function AboutPage() {
       {/* Partner Institution Info */}
       <section className="py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading title={t.partnersTitle} centered={false} />
+          <SectionHeading title={t.partnersTitle}  />
           <p className="mt-6 text-lg text-charcoal/70 leading-relaxed">
             {t.partnersModel}
           </p>
@@ -118,7 +118,7 @@ export default async function AboutPage() {
       {/* Verification */}
       <section className="py-16 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading title={t.verificationTitle} centered={false} />
+          <SectionHeading title={t.verificationTitle}  />
           <p className="mt-6 text-lg text-charcoal/70 leading-relaxed">
             {t.verificationIntro}
           </p>
@@ -146,7 +146,7 @@ export default async function AboutPage() {
       {/* Academic Disclosure */}
       <section id="disclosure" className="py-16 md:py-20 bg-warm-white border-y border-charcoal/10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading title={t.disclosureTitle} centered={false} />
+          <SectionHeading title={t.disclosureTitle}  />
           <ul className="mt-8 space-y-4">
             {t.disclosureItems.map((item: string, index: number) => (
               <li key={index} className="flex items-start gap-3 text-charcoal/70">
@@ -161,7 +161,7 @@ export default async function AboutPage() {
       {/* Legal Information */}
       <section id="legal" className="py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading title={t.legalTitle} centered={false} />
+          <SectionHeading title={t.legalTitle}  />
           <div className="mt-8 space-y-4 text-charcoal/70">
             <p><strong>Company:</strong> {t.legalCompanyName}</p>
             <p><strong>Address:</strong> {t.legalAddress}</p>

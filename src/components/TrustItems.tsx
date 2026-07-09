@@ -15,8 +15,8 @@ export default function TrustItems({ items }: TrustItemsProps) {
           <div className="w-full aspect-video bg-test">
             {/* <img src="" alt="" /> */}
           </div>
-          <div className="p-6">
-            <h3 className="font-heading font-semibold mb-2">{item.title}</h3>
+          <div className="px-6 py-14">
+            <h3 className="font-heading font-semibold mb-4">{item.title}</h3>
             <p className="">{item.description}</p>
           </div>
         </div>
