@@ -3,6 +3,7 @@ export interface Program {
   category: string;
   name: { en: string; id: string };
   description: { en: string; id: string };
+  icon: string;
   institutionSlug: string;
   institutionName: string;
   credentialType: { en: string; id: string };
@@ -37,6 +38,7 @@ export const programs: Program[] = [
     category: "Professional Certificate",
     name: { en: "Professional Certificate in Strategic Leadership", id: "Sertifikat Profesional dalam Kepemimpinan Strategis" },
     description: { en: "A professional certificate program designed for experienced leaders seeking formal recognition of their management expertise.", id: "Program sertifikat profesional yang dirancang untuk pemimpin berpengalaman yang mencari pengakuan formal atas keahlian manajemen mereka." },
+    icon: "FaAward",
     institutionSlug: "sample-university",
     institutionName: "Sample International University",
     credentialType: { en: "Professional Certificate", id: "Sertifikat Profesional" },
@@ -60,6 +62,7 @@ export const programs: Program[] = [
     category: "Executive Education",
     name: { en: "Executive Education in Global Business", id: "Pendidikan Eksekutif dalam Bisnis Global" },
     description: { en: "An executive program for senior professionals who want to expand their international business acumen.", id: "Program eksekutif untuk profesional senior yang ingin memperluas wawasan bisnis internasional mereka." },
+    icon: "FaUserTie",
     institutionSlug: "sample-university",
     institutionName: "Sample International University",
     credentialType: { en: "Executive Education Certificate", id: "Sertifikat Pendidikan Eksekutif" },
@@ -83,6 +86,7 @@ export const programs: Program[] = [
     category: "Prior Learning Assessment",
     name: { en: "Prior Learning Assessment (PLA)", id: "Penilaian Pembelajaran Sebelumnya (PLA)" },
     description: { en: "A formal process to evaluate professional experience and prior learning for academic recognition.", id: "Proses formal untuk mengevaluasi pengalaman profesional dan pembelajaran sebelumnya untuk pengakuan akademik." },
+    icon: "FaClipboardList",
     institutionSlug: "sample-university",
     institutionName: "Sample International University",
     credentialType: { en: "Academic Credit Recognition", id: "Pengakuan Kredit Akademik" },
@@ -106,6 +110,7 @@ export const programs: Program[] = [
     category: "Bachelor Degree Pathway",
     name: { en: "Bachelor Degree Pathway", id: "Jalur Gelar Sarjana" },
     description: { en: "An accelerated bachelor's degree pathway for experienced professionals without a prior undergraduate degree.", id: "Jalur gelar sarjana yang dipercepat untuk profesional berpengalaman tanpa gelar sarjana sebelumnya." },
+    icon: "FaBookOpen",
     institutionSlug: "sample-university",
     institutionName: "Sample International University",
     credentialType: { en: "Bachelor's Degree", id: "Gelar Sarjana" },
@@ -129,6 +134,7 @@ export const programs: Program[] = [
     category: "Master Degree Pathway",
     name: { en: "Master Degree Pathway", id: "Jalur Gelar Magister" },
     description: { en: "A master's degree pathway designed for senior professionals seeking advanced academic qualification.", id: "Jalur gelar magister yang dirancang untuk profesional senior yang mencari kualifikasi akademik tingkat lanjut." },
+    icon: "FaGraduationCap",
     institutionSlug: "sample-university",
     institutionName: "Sample International University",
     credentialType: { en: "Master's Degree", id: "Gelar Magister" },
@@ -152,6 +158,7 @@ export const programs: Program[] = [
     category: "Doctoral Degree Pathway",
     name: { en: "Doctoral Degree Pathway", id: "Jalur Gelar Doktor" },
     description: { en: "A doctoral pathway for senior leaders and experts seeking the highest level of academic credential.", id: "Jalur doktor untuk pemimpin senior dan ahli yang mencari kredensial akademik tingkat tertinggi." },
+    icon: "FaFlask",
     institutionSlug: "sample-university",
     institutionName: "Sample International University",
     credentialType: { en: "Doctoral Degree", id: "Gelar Doktor" },

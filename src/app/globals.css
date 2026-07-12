@@ -6,12 +6,12 @@
 }
 
 @theme {
-  --color-test: #666666;
-
   --color-background: #1b2136;
   --color-foreground: #e3e5e5;
 
   --color-surface: #e3e5e5;
+
+  --color-sekeleton: #666666;
 
   --font-heading: "CanelaMediumTrial";
   --font-body: "Inter", "Source Sans 3", Arial, sans-serif;

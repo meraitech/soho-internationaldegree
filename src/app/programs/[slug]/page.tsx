@@ -1,11 +1,22 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { cookies } from "next/headers";
+import type { ReactNode } from "react";
 import type { Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
 import { programs, getProgramBySlug } from "@/data/programs";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import FinalCTA from "@/components/FinalCTA";
+import {
+  FaUserCheck,
+  FaClipboardCheck,
+  FaFolderOpen,
+  FaBook,
+  FaFilePen,
+  FaGraduationCap,
+  FaSackDollar,
+  FaCertificate,
+} from "react-icons/fa6";
 
 export async function generateStaticParams() {
   return programs
@@ -63,74 +74,36 @@ export default async function ProgramDetailPage({
 
       <section className="py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-10">
-            {/* Overview */}
-            <div>
-              <h2 className="text-2xl font-heading font-semibold text-maroon mb-3">{d.overview}</h2>
-              <p className="text-charcoal/70 leading-relaxed">{program.overview[lang]}</p>
-            </div>
+          {/* Overview */}
+          <div className="mb-14">
+            <h2 className="text-2xl font-heading font-semibold text-maroon mb-4">{d.overview}</h2>
+            <p className="text-charcoal/70 leading-relaxed text-lg">{program.overview[lang]}</p>
+          </div>
 
-            {/* Grid Info */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <InfoBlock label={d.credentialType} value={program.credentialType[lang]} />
-              <InfoBlock label={d.institution} value={program.institutionName} />
-              <InfoBlock label={d.studyMethod} value={program.studyMethod[lang]} />
-              <InfoBlock label={d.duration} value={program.duration[lang]} />
-            </div>
+          {/* Key Info Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
+            <InfoBlock label={d.credentialType} value={program.credentialType[lang]} />
+            <InfoBlock label={d.institution} value={program.institutionName} />
+            <InfoBlock label={d.studyMethod} value={program.studyMethod[lang]} />
+            <InfoBlock label={d.duration} value={program.duration[lang]} />
+          </div>
 
-            {/* Suitable Applicants */}
-            <div>
-              <h2 className="text-2xl font-heading font-semibold text-maroon mb-3">{d.suitable}</h2>
-              <p className="text-charcoal/70 leading-relaxed">{program.suitableApplicants[lang]}</p>
-            </div>
+          {/* Detail Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
+            <DetailCard icon={<FaUserCheck />} title={d.suitable} text={program.suitableApplicants[lang]} />
+            <DetailCard icon={<FaClipboardCheck />} title={d.eligibility} text={program.eligibility[lang]} />
+            <DetailCard icon={<FaFolderOpen />} title={d.documents} text={program.requiredDocuments[lang]} />
+            <DetailCard icon={<FaBook />} title={d.curriculum} text={program.curriculumSummary[lang]} />
+            <DetailCard icon={<FaFilePen />} title={d.assessment} text={program.assessmentMethod[lang]} />
+            <DetailCard icon={<FaGraduationCap />} title={d.graduation} text={program.graduationRequirements[lang]} />
+            <DetailCard icon={<FaSackDollar />} title={d.fees} text={program.feeInformation[lang]} />
+            <DetailCard icon={<FaCertificate />} title={d.accreditation} text={program.accreditationInformation[lang]} />
+          </div>
 
-            {/* Eligibility */}
-            <div>
-              <h2 className="text-2xl font-heading font-semibold text-maroon mb-3">{d.eligibility}</h2>
-              <p className="text-charcoal/70 leading-relaxed">{program.eligibility[lang]}</p>
-            </div>
-
-            {/* Documents */}
-            <div>
-              <h2 className="text-2xl font-heading font-semibold text-maroon mb-3">{d.documents}</h2>
-              <p className="text-charcoal/70 leading-relaxed">{program.requiredDocuments[lang]}</p>
-            </div>
-
-            {/* Curriculum */}
-            <div>
-              <h2 className="text-2xl font-heading font-semibold text-maroon mb-3">{d.curriculum}</h2>
-              <p className="text-charcoal/70 leading-relaxed">{program.curriculumSummary[lang]}</p>
-            </div>
-
-            {/* Assessment */}
-            <div>
-              <h2 className="text-2xl font-heading font-semibold text-maroon mb-3">{d.assessment}</h2>
-              <p className="text-charcoal/70 leading-relaxed">{program.assessmentMethod[lang]}</p>
-            </div>
-
-            {/* Graduation */}
-            <div>
-              <h2 className="text-2xl font-heading font-semibold text-maroon mb-3">{d.graduation}</h2>
-              <p className="text-charcoal/70 leading-relaxed">{program.graduationRequirements[lang]}</p>
-            </div>
-
-            {/* Fees */}
-            <div>
-              <h2 className="text-2xl font-heading font-semibold text-maroon mb-3">{d.fees}</h2>
-              <p className="text-charcoal/70 leading-relaxed">{program.feeInformation[lang]}</p>
-            </div>
-
-            {/* Accreditation */}
-            <div>
-              <h2 className="text-2xl font-heading font-semibold text-maroon mb-3">{d.accreditation}</h2>
-              <p className="text-charcoal/70 leading-relaxed">{program.accreditationInformation[lang]}</p>
-            </div>
-
-            {/* Disclosure */}
-            <div className="bg-surface text-background border border-gold/30  p-6">
-              <h2 className="text-lg font-heading font-semibold text-maroon mb-2">{d.disclosure}</h2>
-              <p className="text-charcoal/60 text-sm leading-relaxed">{program.disclosure[lang]}</p>
-            </div>
+          {/* Disclosure */}
+          <div className="bg-surface text-background border border-gold/30 p-6">
+            <h2 className="text-lg font-heading font-semibold text-maroon mb-2">{d.disclosure}</h2>
+            <p className="text-charcoal/60 text-sm leading-relaxed">{program.disclosure[lang]}</p>
           </div>
 
           <div className="mt-12 text-center">
@@ -158,9 +131,21 @@ export default async function ProgramDetailPage({
 
 function InfoBlock({ label, value }: { label: string; value: string }) {
   return (
-    <div className="bg-surface text-background border border-charcoal/10  p-5">
+    <div className="bg-surface text-background p-6">
       <p className="text-xs font-semibold uppercase tracking-wider text-gold mb-1">{label}</p>
       <p className="text-charcoal font-medium">{value}</p>
+    </div>
+  );
+}
+
+function DetailCard({ icon, title, text }: { icon: ReactNode; title: string; text: string }) {
+  return (
+    <div className="bg-surface text-background p-6">
+      <div className="flex items-center gap-3 mb-3">
+        <span className="text-lg text-maroon shrink-0">{icon}</span>
+        <h3 className="font-heading font-semibold text-maroon">{title}</h3>
+      </div>
+      <p className="text-charcoal/60 text-sm leading-relaxed">{text}</p>
     </div>
   );
 }

@@ -17,6 +17,14 @@ import MyLink from "@/components/ui/my-link";
 import MyPadding from "@/components/ui/my-padding";
 import CertificateItems from "@/components/Certificate";
 import { certificates } from "@/data/certificates";
+import {
+  FaBriefcase,
+  FaUserCheck,
+  FaCrown,
+  FaUsers,
+  FaUserGear,
+} from "react-icons/fa6";
+import { Hero4 } from "@/components/Hero4";
 
 export default async function HomePage() {
   const cookieStore = await cookies();
@@ -28,7 +36,7 @@ export default async function HomePage() {
   return (
     <main>
       {/* Hero */}
-      <section
+      {/* <section
         className="relative bg-cover bg-center text-warm-white h-180 sm:h-212.5 flex items-center -mt-16 md:-mt-20"
         style={{ backgroundImage: "url('/img/hero.jpg')" }}
       >
@@ -49,7 +57,8 @@ export default async function HomePage() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
+      <Hero4 buttonLabel={t.heroCTA} />
 
       {/* Trust Information */}
       <MyContainer>
@@ -117,10 +126,8 @@ export default async function HomePage() {
 
       {/* How It Works */}
       <MyContainer>
-        <HowItWorks
-          title={t.howItWorksTitle}
-          steps={t.howItWorksSteps.map((s: string) => s)}
-        />
+        <SectionHeading title={t.howItWorksTitle} />
+        <HowItWorks steps={t.howItWorksSteps.map((s: string) => s)} />
       </MyContainer>
 
       {/* Suitable Applicants */}
@@ -129,14 +136,20 @@ export default async function HomePage() {
           title={t.suitableTitle}
           description={t.suitableDescription}
         />
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-          {t.suitableList.map((item: string, index: number) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            <FaBriefcase />,
+            <FaUserCheck />,
+            <FaCrown />,
+            <FaUsers />,
+            <FaUserGear />,
+          ].map((icon, index) => (
             <div
               key={index}
-              className="flex items-center gap-3 px-6 py-4 bg-surface text-background border border-charcoal/10 "
+              className="flex items-center gap-4 px-6 py-5 bg-surface text-background"
             >
-              <div className="w-2 h-2 bg-gold  shrink-0" />
-              <span className="text-charcoal/80">{item}</span>
+              <span className="text-xl text-gold shrink-0">{icon}</span>
+              <span className="text-charcoal/80 font-medium">{t.suitableList[index]}</span>
             </div>
           ))}
         </div>
