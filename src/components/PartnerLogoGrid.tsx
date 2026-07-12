@@ -23,9 +23,9 @@ export default function PartnerLogoGrid({ institutions }: PartnerLogoGridProps) 
           href={inst.website}
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex flex-col items-center gap-3 p-6 bg-white border border-charcoal/10 rounded-lg hover:shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
+          className="group flex flex-col items-center gap-3 p-6 bg-surface text-background border border-charcoal/10  hover:shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
         >
-          <div className="w-16 h-16 bg-warm-white rounded-full flex items-center justify-center text-maroon font-heading font-bold text-xl group-hover:bg-maroon group-hover:text-warm-white transition-colors">
+          <div className="w-16 h-16 bg-warm-white  flex items-center justify-center text-maroon font-heading font-bold text-xl group-hover:bg-maroon group-hover:text-warm-white transition-colors">
             {inst.logoLabel}
           </div>
           <div className="text-center">

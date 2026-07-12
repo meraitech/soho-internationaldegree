@@ -14,7 +14,7 @@ export default function FinalCTA({
   ctaMessage,
 }: FinalCTAProps) {
   return (
-    <div className="bg-maroon rounded-2xl p-8 md:p-12 lg:p-16 text-center text-warm-white">
+    <div className="bg-maroon  p-8 md:p-12 lg:p-16 text-center text-warm-white">
       <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading leading-tight mb-4">
         {headline}
       </h2>

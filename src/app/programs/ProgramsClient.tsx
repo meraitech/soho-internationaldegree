@@ -39,10 +39,10 @@ export default function ProgramsClient({
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-maroon focus-visible:ring-offset-2 ${
+            className={`px-4 py-2  text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-maroon focus-visible:ring-offset-2 ${
               activeCategory === cat
                 ? "bg-maroon text-warm-white"
-                : "bg-white border border-charcoal/10 text-charcoal/70 hover:border-maroon hover:text-maroon"
+                : "bg-surface text-background border border-charcoal/10 text-charcoal/70 hover:border-maroon hover:text-maroon"
             }`}
           >
             {cat === "All" ? allLabel : cat}

@@ -54,7 +54,7 @@ export default async function AboutPage() {
       </section>
 
       {/* Our Story */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-surface text-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading title={t.storyTitle}  />
           <p className="mt-6 text-lg text-charcoal/70 leading-relaxed">
@@ -70,7 +70,7 @@ export default async function AboutPage() {
           <ul className="mt-8 space-y-4">
             {t.roleList.map((item: string, index: number) => (
               <li key={index} className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-gold rounded-full mt-3 shrink-0" />
+                <div className="w-2 h-2 bg-gold  mt-3 shrink-0" />
                 <span className="text-charcoal/70 text-lg">{item}</span>
               </li>
             ))}
@@ -79,13 +79,13 @@ export default async function AboutPage() {
       </section>
 
       {/* Our Process */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-surface text-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading title={t.processTitle}  />
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
             {t.processSteps.map((step: string, index: number) => (
               <div key={index} className="flex gap-4 items-start">
-                <div className="shrink-0 w-10 h-10 bg-maroon text-warm-white rounded-full flex items-center justify-center font-heading font-bold">
+                <div className="shrink-0 w-10 h-10 bg-maroon text-warm-white  flex items-center justify-center font-heading font-bold">
                   {index + 1}
                 </div>
                 <p className="text-charcoal/70 pt-2">{step}</p>
@@ -103,11 +103,11 @@ export default async function AboutPage() {
             {t.partnersModel}
           </p>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white border border-charcoal/10 rounded-lg p-6">
+            <div className="bg-surface text-background border border-charcoal/10  p-6">
               <h3 className="font-heading font-semibold text-maroon mb-2">Partner Institution</h3>
               <p className="text-charcoal/60 text-sm">{t.institutionResponsibilities}</p>
             </div>
-            <div className="bg-white border border-charcoal/10 rounded-lg p-6">
+            <div className="bg-surface text-background border border-charcoal/10  p-6">
               <h3 className="font-heading font-semibold text-maroon mb-2">International.degree</h3>
               <p className="text-charcoal/60 text-sm">{t.ourResponsibilities}</p>
             </div>
@@ -116,7 +116,7 @@ export default async function AboutPage() {
       </section>
 
       {/* Verification */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-surface text-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading title={t.verificationTitle}  />
           <p className="mt-6 text-lg text-charcoal/70 leading-relaxed">
@@ -174,7 +174,7 @@ export default async function AboutPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-surface text-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <FAQ items={aboutFaqs} lang={lang} />
         </div>

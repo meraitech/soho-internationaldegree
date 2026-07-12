@@ -127,7 +127,7 @@ export default async function ProgramDetailPage({
             </div>
 
             {/* Disclosure */}
-            <div className="bg-warm-white border border-gold/30 rounded-lg p-6">
+            <div className="bg-surface text-background border border-gold/30  p-6">
               <h2 className="text-lg font-heading font-semibold text-maroon mb-2">{d.disclosure}</h2>
               <p className="text-charcoal/60 text-sm leading-relaxed">{program.disclosure[lang]}</p>
             </div>
@@ -143,7 +143,7 @@ export default async function ProgramDetailPage({
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-surface text-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FinalCTA
             headline={t.finalCTA}
@@ -158,7 +158,7 @@ export default async function ProgramDetailPage({
 
 function InfoBlock({ label, value }: { label: string; value: string }) {
   return (
-    <div className="bg-white border border-charcoal/10 rounded-lg p-5">
+    <div className="bg-surface text-background border border-charcoal/10  p-5">
       <p className="text-xs font-semibold uppercase tracking-wider text-gold mb-1">{label}</p>
       <p className="text-charcoal font-medium">{value}</p>
     </div>

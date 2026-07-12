@@ -15,7 +15,7 @@ export default function HowItWorks({ steps, title }: HowItWorksProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {steps.map((step, index) => (
             <div key={index} className="flex gap-4 items-start">
-              <div className="shrink-0 w-10 h-10 bg-maroon text-warm-white rounded-full flex items-center justify-center font-heading font-bold text-lg">
+              <div className="shrink-0 w-10 h-10 bg-maroon text-warm-white  flex items-center justify-center font-heading font-bold text-lg">
                 {index + 1}
               </div>
               <p className="text-charcoal/70 pt-2">{step}</p>

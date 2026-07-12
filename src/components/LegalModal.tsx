@@ -20,7 +20,7 @@ export default function LegalModal({ sections }: LegalModalProps) {
       {sections.map((section) => {
         const isOpen = openId === section.id;
         return (
-          <div key={section.id} className="border border-charcoal/10 rounded-lg overflow-hidden bg-white">
+          <div key={section.id} className="border border-charcoal/10  overflow-hidden bg-surface text-background">
             <button
               onClick={() => setOpenId(isOpen ? null : section.id)}
               className="w-full flex items-center justify-between px-6 py-4 text-left text-lg font-heading font-semibold text-maroon hover:bg-warm-white/50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-gold"

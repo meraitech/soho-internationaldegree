@@ -36,7 +36,7 @@ export default function ProgramCard({ program, lang, viewLabel = "View Programs"
         <div className="flex gap-3">
           <Link
             href={`/programs/${program.slug}`}
-            className="flex-1 text-center px-4 py-2.5 border-2 border-maroon text-maroon rounded-lg text-sm font-semibold hover:bg-maroon hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-maroon focus-visible:ring-offset-2"
+            className="flex-1 text-center px-4 py-2.5 border-2 border-maroon text-maroon  text-sm font-semibold hover:bg-maroon hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-maroon focus-visible:ring-offset-2"
           >
             {viewLabel}
           </Link>
@@ -44,7 +44,7 @@ export default function ProgramCard({ program, lang, viewLabel = "View Programs"
             href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}?text=${whatsappMessage}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 text-center px-4 py-2.5 bg-maroon text-warm-white rounded-lg text-sm font-semibold hover:bg-maroon-light transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-maroon focus-visible:ring-offset-2"
+            className="flex-1 text-center px-4 py-2.5 bg-maroon text-warm-white  text-sm font-semibold hover:bg-maroon-light transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-maroon focus-visible:ring-offset-2"
           >
             {whatsappLabel}
           </a>

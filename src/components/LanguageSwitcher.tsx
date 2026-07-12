@@ -20,7 +20,7 @@ export default function LanguageSwitcher({ currentLang }: LanguageSwitcherProps)
   return (
     <button
       onClick={toggleLang}
-      className="px-3 py-1.5 text-sm font-medium rounded-md border border-charcoal/20 hover:border-gold hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
+      className="px-3 py-1.5 text-sm font-medium  border border-charcoal/20 hover:border-gold hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
       aria-label={`Switch to ${translations[currentLang].language}`}
     >
       {label}

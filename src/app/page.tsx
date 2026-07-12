@@ -133,9 +133,9 @@ export default async function HomePage() {
           {t.suitableList.map((item: string, index: number) => (
             <div
               key={index}
-              className="flex items-center gap-3 px-6 py-4 bg-white border border-charcoal/10 rounded-lg"
+              className="flex items-center gap-3 px-6 py-4 bg-surface text-background border border-charcoal/10 "
             >
-              <div className="w-2 h-2 bg-gold rounded-full shrink-0" />
+              <div className="w-2 h-2 bg-gold  shrink-0" />
               <span className="text-charcoal/80">{item}</span>
             </div>
           ))}
@@ -160,7 +160,7 @@ export default async function HomePage() {
         />
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {t.whyChooseList.map((item: { title: string; description: string }, index: number) => (
-            <div key={index} className="bg-white border border-charcoal/10 rounded-lg p-6">
+            <div key={index} className="bg-surface text-background border border-charcoal/10  p-6">
               <h3 className="font-heading font-semibold text-maroon text-lg mb-2">{item.title}</h3>
               <p className="text-charcoal/60 text-sm">{item.description}</p>
             </div>

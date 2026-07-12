@@ -11,7 +11,7 @@ export default function TrustItems({ items }: TrustItemsProps) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-background">
       {items.map((item, index) => (
-        <div key={index} className="bg-surface">
+        <div key={index} className="bg-surface text-background">
           <div className="w-full aspect-video bg-test">
             {/* <img src="" alt="" /> */}
           </div>

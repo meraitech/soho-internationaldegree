@@ -26,7 +26,7 @@ export default function FAQ({ items, lang, title }: FAQProps) {
           return (
             <div
               key={index}
-              className="border border-charcoal/10 rounded-lg overflow-hidden bg-white"
+              className="border border-charcoal/10  overflow-hidden bg-surface text-background"
             >
               <button
                 onClick={() => setOpenIndex(isOpen ? null : index)}
