@@ -15,7 +15,6 @@ export const translations = {
         { title: "International Network", description: "Connected to accredited international institutions worldwide." },
         { title: "Transparent Review", description: "Clear eligibility assessment before any commitment." },
         { title: "Verification Support", description: "Assistance verifying institutions and credentials." },
-        { title: "Personal Consultation", description: "Dedicated advisor for your academic journey." },
       ],
       aboutTitle: "About International.degree",
       aboutDescription: "International.degree helps experienced professionals access international certificate and degree pathways. We work with accredited partner institutions to provide clear, transparent information about academic programs that recognize professional experience.",

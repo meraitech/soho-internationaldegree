@@ -24,7 +24,8 @@ import {
 } from "react-icons/fa6";
 import { Hero4 } from "@/components/Hero4";
 import Faq4 from "@/components/faq-4";
-import Cta4 from "@/components/cta-4";
+import CTA13 from "@/components/cta-13";
+import { SocialProof9 } from "@/components/social-proof-9";
 
 export default async function HomePage() {
   const cookieStore = await cookies();
@@ -134,23 +135,13 @@ export default async function HomePage() {
       </MyContainer>
 
       {/* Partner Institutions */}
-      <MyContainer>
-        <SectionHeading
-          title={t.partnersTitle}
-          description={t.partnersDescription}
-        />
-        <div className="mt-10">
-          <PartnerLogoGrid institutions={institutions} lang={lang} />
-        </div>
-      </MyContainer>
+      <SocialProof9 />
 
       {/* FAQ */}
       <Faq4 />
 
       {/* Final CTA */}
-      <MyPadding>
-        <Cta4 />
-      </MyPadding>
+      <CTA13 />
     </main>
   );
 }
