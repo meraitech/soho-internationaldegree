@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "Sertifikasi Hafiz",
   description:
-    "Sertifikasi & beasiswa penghafal Al-Qur'an berstandar internasional. Diakui IAO dan tersertifikasi resmi oleh Yayasan Hafiz Indonesia Emas.",
+    "Sertifikasi & beasiswa penghafal Al-Qur'an berstandar internasional. Terakreditasi secara internasional oleh IAO dan tersertifikasi resmi oleh Yayasan Hafiz Indonesia Emas.",
   url: "https://sertifikasihafiz.com",
   ogImage: "/og-image.png",
   creator: "@sertifikasihafiz",

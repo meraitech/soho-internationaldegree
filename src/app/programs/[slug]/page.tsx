@@ -66,7 +66,6 @@ export default async function ProgramDetailPage({
             <WhatsAppButton
               label={t.detailCTA}
               message={whatsappMessage}
-              variant="gold"
             />
           </div>
         </div>

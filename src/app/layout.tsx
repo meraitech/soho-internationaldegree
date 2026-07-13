@@ -3,8 +3,8 @@ import { Source_Serif_4, Inter } from "next/font/google";
 import { cookies } from "next/headers";
 import type { Lang } from "@/data/settings";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import "./globals.css";
+import Footer1 from "@/components/footer-1";
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
@@ -51,7 +51,7 @@ export default async function RootLayout({
         <div className="flex-1">
           {children}
         </div>
-        <Footer lang={lang} />
+        <Footer1 />
       </body>
     </html>
   );

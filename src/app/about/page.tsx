@@ -4,7 +4,6 @@ import { translations } from "@/data/translations";
 import { faqs } from "@/data/faqs";
 import SectionHeading from "@/components/SectionHeading";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import FAQ from "@/components/FAQ";
 import MyContainer from "@/components/ui/my-container";
 import FinalCTA from "@/components/FinalCTA";
 import LegalModal from "@/components/LegalModal";
@@ -17,6 +16,7 @@ import {
   FaComments,
   FaShieldHalved,
 } from "react-icons/fa6";
+import Faq4 from "@/components/faq-4";
 
 export default async function AboutPage() {
   const cookieStore = await cookies();
@@ -57,7 +57,6 @@ export default async function AboutPage() {
             <WhatsAppButton
               label="Consult via WhatsApp"
               message="Hello International.degree, I would like to learn more about your services and consultation process."
-              variant="gold"
             />
           </div>
         </div>
@@ -188,11 +187,7 @@ export default async function AboutPage() {
       </MyContainer>
 
       {/* FAQ */}
-      <section className="bg-surface text-background">
-        <MyContainer>
-          <FAQ items={aboutFaqs} lang={lang} />
-        </MyContainer>
-      </section>
+      <Faq4 />
 
       {/* Final CTA */}
       <section className="py-16 md:py-20">

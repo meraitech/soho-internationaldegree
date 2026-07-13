@@ -28,7 +28,6 @@ export default async function ProgramsPage() {
             <WhatsAppButton
               label={homeT.heroCTA}
               message="Hello International.degree, I would like to consult about the available international academic programs."
-              variant="gold"
             />
           </div>
         </div>

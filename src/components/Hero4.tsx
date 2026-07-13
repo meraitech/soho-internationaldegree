@@ -69,30 +69,16 @@ export function Hero4({ buttonLabel }: { buttonLabel: string }) {
                 <MyContainer>
                     {/* Label */}
                     <motion.div
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
-                        className="flex items-center"
-                    >
-                        <div className="flex items-center gap-2">
-                            <div className="w-1.5 h-1.5" />
-                            <span className="text-sm sm:text-base font-medium">
-                                Premium streaming
-                            </span>
-                        </div>
-                    </motion.div>
-
-                    <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
                         className="flex flex-col space-y-3 sm:space-y-4"
                     >
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal leading-[1.1] md:whitespace-nowrap">
-                            Unlimited entertainment, forever.
+                            Global Accreditation for
                         </h1>
                         <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal leading-[1.1] md:whitespace-nowrap">
-                            Watch anywhere, anytime.
+                            Your Expertise
                         </p>
                     </motion.div>
 
