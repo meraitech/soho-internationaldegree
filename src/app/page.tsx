@@ -96,11 +96,12 @@ export default async function HomePage() {
 
 
       {/* How It Works */}
-      <Features1 />
-      <MyContainer>
+      <Features1 title={t.howItWorksTitle} steps={t.howItWorksSteps} />
+
+      {/* <MyContainer>
         <SectionHeading title={t.howItWorksTitle} />
         <HowItWorks steps={t.howItWorksSteps.map((s: string) => s)} />
-      </MyContainer>
+      </MyContainer> */}
 
       {/* Suitable Applicants */}
       <MyContainer>
