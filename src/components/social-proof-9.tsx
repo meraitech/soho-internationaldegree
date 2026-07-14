@@ -7,6 +7,8 @@ import {
     useTransform,
 } from "motion/react";
 import { useRef, useState } from "react";
+import type { Lang } from "@/data/settings";
+import { translations } from "@/data/translations";
 
 const logits1 = [
     { name: "Acme Corp", url: "#", img: "https://ofa.fas.harvard.edu/sites/g/files/omnuum4081/files/hwp_hyard/logo/OFA%20main%20logo_Horizontal_Full%20Color-white-text.png" },
@@ -114,12 +116,12 @@ const Marquee = ({
     );
 };
 
-export function SocialProof9() {
+export function SocialProof9({ lang }: { lang: Lang }) {
     return (
         <section className="py-24 overflow-hidden">
             <div className="container mx-auto px-4 mb-12 text-center">
                 <h3 className="text-sm font-medium tracking-widest uppercase text-black dark:text-white">
-                    Connecting the world's greatest Universities Partners
+                    {translations[lang].home.partnersHeading}
                 </h3>
             </div>
 

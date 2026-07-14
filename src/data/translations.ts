@@ -59,6 +59,7 @@ export const translations = {
       ],
       partnersTitle: "Partner Institutions",
       partnersDescription: "We work with accredited international institutions committed to recognizing professional experience.",
+      partnersHeading: "Connecting the world's greatest Universities Partners",
       whyChooseTitle: "Why Choose International.degree",
       whyChooseList: [
         { title: "Personal Consultation", description: "One-on-one guidance from your dedicated academic advisor" },
@@ -266,6 +267,7 @@ export const translations = {
       ],
       partnersTitle: "Institusi Mitra",
       partnersDescription: "Kami bekerja dengan institusi internasional terakreditasi yang berkomitmen mengakui pengalaman profesional.",
+      partnersHeading: "Menghubungkan Mitra Universitas Terbesar di Dunia",
       whyChooseTitle: "Mengapa Memilih International.degree",
       whyChooseList: [
         { title: "Konsultasi Personal", description: "Bimbingan satu-satu dari penasihat akademik khusus Anda" },
