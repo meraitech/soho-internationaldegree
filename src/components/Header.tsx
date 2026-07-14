@@ -59,10 +59,10 @@ export default function Header({ lang }: HeaderProps) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${visible ? "translate-y-0" : "-translate-y-full"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all text-background duration-300 ${visible ? "translate-y-0" : "-translate-y-full"
         } ${!visible ? "" : transparent
           ? "bg-transparent"
-          : "bg-surface text-background shadow-sm"
+          : "bg-surface  shadow-sm"
         }`}
     >
       <div >
