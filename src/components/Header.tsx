@@ -16,6 +16,7 @@ export default function Header({ lang }: HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const t = translations[lang].nav;
+  const homeT = translations[lang].home;
 
   const [scrolled, setScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
@@ -102,7 +103,7 @@ export default function Header({ lang }: HeaderProps) {
               label={t.consult}
               variant="secondary"
               className="h-16 md:h-20 text-lg"
-              message="Hello International.degree, I would like to consult about an academic program suitable for my education and professional experience."
+              message={homeT.whatsappConsult}
             />
           </nav>
 
@@ -110,7 +111,7 @@ export default function Header({ lang }: HeaderProps) {
             className={`md:hidden p-2  transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-maroon ${transparent ? "hover:bg-warm-white/10" : "hover:bg-charcoal/5"
               }`}
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-label={mobileOpen ? translations[lang].common.closeMenu : translations[lang].common.openMenu}
           >
             {mobileOpen ? (
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -156,7 +157,7 @@ export default function Header({ lang }: HeaderProps) {
               label={t.consult}
               variant="secondary"
               className="h-16 md:h-20"
-              message="Hello International.degree, I would like to consult about an academic program suitable for my education and professional experience."
+              message={homeT.whatsappConsult}
             />
           </div>
         </div>

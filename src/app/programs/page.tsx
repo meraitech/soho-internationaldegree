@@ -31,7 +31,7 @@ export default async function ProgramsPage() {
               <WhatsAppButton
                 label={homeT.heroCTA}
                 variant="secondary"
-                message="Hello International.degree, I would like to consult about the available international academic programs."
+                message={homeT.whatsappPrograms}
               />
             </div>
           </div>
@@ -43,6 +43,7 @@ export default async function ProgramsPage() {
           lang={lang}
           categories={categories}
           allLabel={t.allCategories}
+          categoryLabels={t.categoryLabels}
           viewLabel={homeT.viewPrograms}
           whatsappLabel={homeT.askWhatsApp}
           emptyTitle={t.emptyTitle}
@@ -51,7 +52,7 @@ export default async function ProgramsPage() {
       </MyContainer>
 
       {/* Final CTA */}
-      <CTA13 />
+      <CTA13 lang={lang} />
     </main>
   );
 }

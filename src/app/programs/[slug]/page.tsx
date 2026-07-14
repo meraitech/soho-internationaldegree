@@ -115,7 +115,7 @@ export default async function ProgramDetailPage({
       </MyContainer>
 
       {/* Final CTA */}
-      <CTA13 />
+      <CTA13 lang={lang} />
     </main>
   );
 }

@@ -6,7 +6,7 @@ import MyContainer from "./ui/my-container";
 import MyPadding from "./ui/my-padding";
 import WhatsAppButton from "./WhatsAppButton";
 
-export function Hero4({ buttonLabel }: { buttonLabel: string }) {
+export function Hero4({ buttonLabel, headline, whatsappMessage }: { buttonLabel: string; headline: string; whatsappMessage?: string }) {
     const [isPaused, setIsPaused] = useState(false);
     const scrollRef = useRef<HTMLDivElement>(null);
     const scrollPositionRef = useRef(0);
@@ -15,17 +15,17 @@ export function Hero4({ buttonLabel }: { buttonLabel: string }) {
         {
             id: 1,
             src: "/img/hero1.jpg",
-            alt: "Image 1",
+            alt: "Hero image 1",
         },
         {
             id: 2,
             src: "/img/hero2.jpg",
-            alt: "Image 2",
+            alt: "Hero image 2",
         },
         {
             id: 3,
             src: "/img/hero3.jpg",
-            alt: "Image 3",
+            alt: "Hero image 3",
         },
     ];
 
@@ -75,11 +75,8 @@ export function Hero4({ buttonLabel }: { buttonLabel: string }) {
                         className="flex flex-col space-y-3 sm:space-y-4"
                     >
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal leading-[1.1] md:whitespace-nowrap">
-                            Global Accreditation for
+                            {headline}
                         </h1>
-                        <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal leading-[1.1] md:whitespace-nowrap">
-                            Your Expertise
-                        </p>
                     </motion.div>
 
                     <motion.div
@@ -90,7 +87,7 @@ export function Hero4({ buttonLabel }: { buttonLabel: string }) {
                         <WhatsAppButton
                             label={buttonLabel}
                             variant="secondary"
-                            message="Hello International.degree, I would like to consult about an academic program suitable for my education and professional experience."
+                            message={whatsappMessage}
                         />
                     </motion.div>
                 </MyContainer>

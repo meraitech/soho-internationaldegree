@@ -23,23 +23,13 @@ const icons = [
   FaCertificate,
 ];
 
-const descriptions = [
-  "Speak directly with your dedicated academic advisor about your career goals and educational background in a personal conversation.",
-  "Share your transcripts, certificates, and professional history so we can evaluate your qualifications thoroughly.",
-  "Receive a clear and honest assessment of how your experience aligns with the requirements of our academic programs.",
-  "Get matched with the best academic pathway tailored to your profile, goals, and professional background.",
-  "We guide you through every form, deadline, and requirement to make your enrollment seamless and stress-free.",
-  "Complete your studies at your own pace with continuous support from your advisor throughout the journey.",
-  "Receive your officially recognized international certificate or degree credential from our accredited partner institution.",
-];
-
 interface Features1Props {
   title: string;
   steps: readonly string[];
   descriptions?: readonly string[];
 }
 
-export function Features1({ title, steps, descriptions: customDescriptions }: Features1Props) {
+export function Features1({ title, steps, descriptions }: Features1Props) {
   return (
     <MyContainer>
       <SectionHeading title={title} description="" />
@@ -47,7 +37,7 @@ export function Features1({ title, steps, descriptions: customDescriptions }: Fe
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 md:gap-x-8 md:gap-y-12">
         {steps.map((step, index) => {
           const Icon = icons[index];
-          const description = (customDescriptions ?? descriptions)[index] || "";
+          const description = descriptions?.[index] || "";
           return (
             <motion.div
               key={index}

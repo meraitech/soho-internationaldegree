@@ -2,6 +2,8 @@
 
 import { motion, useReducedMotion, type Variants } from "motion/react";
 import { BsAsterisk } from "react-icons/bs";
+import type { Lang } from "@/data/settings";
+import { translations } from "@/data/translations";
 
 const mulberry32 = (seed: number) => {
   let a = seed;
@@ -87,8 +89,9 @@ const HalftoneField = ({ className }: { className?: string }) => (
   </svg>
 );
 
-export default function CTA13() {
+export default function CTA13({ lang }: { lang: Lang }) {
   const reduceMotion = useReducedMotion();
+  const t = translations[lang].home;
 
   return (
     <section className="w-full px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
@@ -152,42 +155,33 @@ export default function CTA13() {
               className="inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400"
             >
               <BsAsterisk className="h-4 w-4 text-neutral-900 dark:text-white" />
-              The Foreword Panel
+              International.degree
             </motion.span>
 
             <motion.h2
               variants={item}
               className="mt-7 font-serif text-4xl leading-[1.08] tracking-tight text-neutral-950 sm:text-5xl md:text-6xl dark:text-white"
             >
-              Put your <em className="italic">taste</em> to work.
+              {t.finalCTA}
             </motion.h2>
 
             <motion.p
               variants={item}
               className="mt-6 max-w-xl text-base leading-relaxed text-neutral-600 sm:text-lg dark:text-neutral-400"
             >
-              Foreword pairs discerning reviewers with unreleased products.
-              Preview what&apos;s next, say what you really think, and get paid
-              for the feedback that shapes it.
+              {t.finalCTADescription}
             </motion.p>
 
             <motion.div variants={item} className="mt-10 w-full sm:w-auto">
               <motion.a
-                href="#"
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}?text=${encodeURIComponent("Hello International.degree, " + t.finalCTA.toLowerCase())}`}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
                 className="inline-flex w-full cursor-pointer items-center justify-center bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white transition-colors hover:bg-neutral-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-100 sm:w-auto dark:bg-white dark:text-neutral-950 dark:hover:bg-neutral-200 dark:focus-visible:ring-white dark:focus-visible:ring-offset-neutral-900"
               >
-                Request an invite
+                {t.heroCTA}
               </motion.a>
             </motion.div>
-
-            <motion.p
-              variants={item}
-              className="mt-6 text-sm text-neutral-500 dark:text-neutral-400"
-            >
-              Invites reviewed weekly · Panelists average $340/mo
-            </motion.p>
           </motion.div>
         </motion.div>
       </div>

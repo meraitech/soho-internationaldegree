@@ -13,6 +13,7 @@ import Image from "next/image";
 import { useRef, useState, type MouseEvent, type ReactNode } from "react";
 import type { Certificate } from "@/data/certificates";
 import type { Lang } from "@/data/settings";
+import { translations } from "@/data/translations";
 
 interface CertificateItemsProps {
   items: Certificate[];
@@ -22,6 +23,7 @@ interface CertificateItemsProps {
 const SPRING = { stiffness: 200, damping: 24, mass: 0.6 };
 
 export default function CertificateItems({ items, lang }: CertificateItemsProps): ReactNode {
+  const commonT = translations[lang].common;
   const prefersReducedMotion = useReducedMotion();
   const listRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState<number | null>(null);
@@ -137,7 +139,7 @@ export default function CertificateItems({ items, lang }: CertificateItemsProps)
             <button
               onClick={() => setModalImage(null)}
               className="absolute -top-10 right-0 text-white/60 hover:text-white transition-colors z-10 cursor-pointer"
-              aria-label="Close"
+              aria-label={commonT.close}
             >
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -145,7 +147,7 @@ export default function CertificateItems({ items, lang }: CertificateItemsProps)
             </button>
             <Image
               src={modalImage}
-              alt="Certificate full view"
+              alt={commonT.certificateFullView}
               width={1200}
               height={1600}
               className="max-h-[85vh] w-auto object-contain"

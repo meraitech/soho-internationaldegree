@@ -1,6 +1,5 @@
 "use client";
 
-import { settings } from "@/data/settings";
 import { FaWhatsapp } from "react-icons/fa6";
 
 interface WhatsAppButtonProps {
@@ -10,8 +9,6 @@ interface WhatsAppButtonProps {
   variant?: "primary" | "outline" | "secondary" | "accent";
   size?: "md" | "lg";
 }
-
-const defaultMessage = "Hello International.degree, I would like to consult about the available international academic programs.";
 
 const variantStyles = {
   primary: "bg-foreground text-background",
@@ -26,14 +23,13 @@ const sizeStyles = {
 };
 
 export default function WhatsAppButton({
-  message = defaultMessage,
+  message = "Hello International.degree, I would like to consult about the available international academic programs.",
   label = "Consult via WhatsApp",
   className = "",
   variant = "primary",
   size = "lg",
 }: WhatsAppButtonProps) {
-  const encoded = encodeURIComponent(message);
-  const href = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}?text=${encodeURIComponent("Hello International.degree, I would like to consult about the available international academic programs.")}`
+  const href = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}?text=${encodeURIComponent(message)}`
 
   return (
     <a

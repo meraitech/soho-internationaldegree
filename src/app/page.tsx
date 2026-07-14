@@ -28,14 +28,14 @@ export default async function HomePage() {
   return (
     <main>
       {/* Hero */}
-      <Hero4 buttonLabel={t.heroCTA} />
+      <Hero4 buttonLabel={t.heroCTA} headline={t.heroHeadline} whatsappMessage={t.whatsappConsult} />
 
       {/* Trust Information */}
       <MyContainer>
         <SectionHeading
           title={t.trustTitle}
-          description="Credibility built on international accreditation and transparent academic pathways for experienced professionals."
-          link={{ href: "#", label: "See how your experience can be recognized" }}
+          description={t.trustDescription}
+          link={{ href: "#", label: t.trustLinkLabel }}
         />
         <MyCard items={t.trustItems.map((item: { title: string; description: string }) => ({ title: item.title, description: item.description }))} />
       </MyContainer>
@@ -44,21 +44,21 @@ export default async function HomePage() {
       <MyContainer>
         <SectionHeading
           title={t.aboutTitle}
-          description="Bridging professional experience with international academic recognition."
-          link={{ href: "/programs", label: "Explore our programs" }}
+          description={t.aboutSubtext}
+          link={{ href: "/programs", label: t.aboutLinkLabel }}
         />
         <div className="w-full relative flex px-4 sm:px-6 lg:px-8 h-180 items-center">
           <div className="absolute inset-0 w-1/2 h-full bg-linear-to-r from-black z-1" />
-          <img src="/img/about.jpg" alt="About International.degree" className="absolute inset-0 w-full h-full object-cover z-0 opacity-70" />
+          <img src="/img/about.jpg" alt={t.aboutTitle} className="absolute inset-0 w-full h-full object-cover z-0 opacity-70" />
           <div className="flex flex-col gap-4 z-10 max-w-xl">
             <p >
               {t.aboutDescription}
             </p>
             <p>
-              We guide you through every step — from eligibility review to credential verification — so you can focus on what matters most.
+              {t.aboutExtraDescription}
             </p>
             <MyLink link={{ href: "/about", label: t.aboutCTA }} />
-            <MyLink link={{ href: "/about", label: "Consult via WhatsApp" }} />
+            <MyLink link={{ href: "/about", label: t.heroCTA }} />
           </div>
         </div>
       </MyContainer>
@@ -95,7 +95,7 @@ export default async function HomePage() {
 
 
       {/* How It Works */}
-      <Features1 title={t.howItWorksTitle} steps={t.howItWorksSteps} />
+      <Features1 title={t.howItWorksTitle} steps={t.howItWorksSteps} descriptions={t.howItWorksDescriptions} />
 
       {/* Suitable Applicants */}
       <MyContainer>
@@ -107,13 +107,13 @@ export default async function HomePage() {
       </MyContainer>
 
       {/* Partner Institutions */}
-      <SocialProof9 />
+      <SocialProof9 lang={lang} />
 
       {/* FAQ */}
-      <Faq4 />
+      <Faq4 lang={lang} faqs={homeFaqs} />
 
       {/* Final CTA */}
-      <CTA13 />
+      <CTA13 lang={lang} />
     </main>
   );
 }

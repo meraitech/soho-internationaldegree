@@ -9,6 +9,7 @@ interface ProgramsClientProps {
   lang: Lang;
   categories: readonly string[];
   allLabel: string;
+  categoryLabels: Record<string, string>;
   viewLabel: string;
   whatsappLabel: string;
   emptyTitle: string;
@@ -19,6 +20,7 @@ export default function ProgramsClient({
   lang,
   categories,
   allLabel,
+  categoryLabels,
   viewLabel,
   whatsappLabel,
   emptyTitle,
@@ -45,7 +47,7 @@ export default function ProgramsClient({
                 : "bg-surface text-background border border-charcoal/10 text-charcoal/70 hover:border-maroon hover:text-maroon"
             }`}
           >
-            {cat === "All" ? allLabel : cat}
+            {cat === "All" ? allLabel : categoryLabels[cat] || cat}
           </button>
         ))}
       </div>

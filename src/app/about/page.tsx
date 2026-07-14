@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import type { Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
+import { faqs } from "@/data/faqs";
 import SectionHeading from "@/components/SectionHeading";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MyContainer from "@/components/ui/my-container";
@@ -16,6 +17,8 @@ export default async function AboutPage() {
   const cookieStore = await cookies();
   const lang = (cookieStore.get("lang")?.value as Lang) || "en";
   const t = translations[lang].about;
+  const homeT = translations[lang].home;
+  const aboutFaqs = faqs.about;
 
   const legalSections = [
     {
@@ -49,9 +52,9 @@ export default async function AboutPage() {
                 {t.pageDescription}
               </p>
               <WhatsAppButton
-                label="Consult via WhatsApp"
+                label={t.finalCTA}
                 variant="secondary"
-                message="Hello International.degree, I would like to learn more about your services and consultation process."
+                message={homeT.whatsappAbout}
               />
             </div>
           </div>
@@ -69,7 +72,7 @@ export default async function AboutPage() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-surface text-background p-6">
-            <h3 className="font-heading font-semibold text-maroon mb-2">Partner Institution</h3>
+            <h3 className="font-heading font-semibold text-maroon mb-2">{t.partnersTitle}</h3>
             <p className="text-charcoal/60 text-sm">{t.institutionResponsibilities}</p>
           </div>
           <div className="bg-surface text-background p-6">
@@ -85,7 +88,7 @@ export default async function AboutPage() {
           title={t.verificationTitle}
           description={t.verificationIntro}
           link={{
-            href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}?text=${encodeURIComponent("Hello International.degree, I need assistance verifying an institution or credential.")}`,
+            href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}?text=${encodeURIComponent(homeT.whatsappAbout)}`,
             label: t.verificationCTA
           }}
         />
@@ -117,10 +120,10 @@ export default async function AboutPage() {
       </MyContainer>
 
       {/* FAQ */}
-      <Faq4 />
+      <Faq4 lang={lang} faqs={aboutFaqs} />
 
       {/* Final CTA */}
-      <CTA13 />
+      <CTA13 lang={lang} />
     </main>
   );
 }

@@ -1,16 +1,17 @@
 import type { Institution } from "@/data/institutions";
 import type { Lang } from "@/data/settings";
+import { translations } from "@/data/translations";
 
 interface PartnerLogoGridProps {
   institutions: Institution[];
   lang: Lang;
 }
 
-export default function PartnerLogoGrid({ institutions }: PartnerLogoGridProps) {
+export default function PartnerLogoGrid({ institutions, lang }: PartnerLogoGridProps) {
   if (institutions.length === 0) {
     return (
       <div className="text-center py-12 text-charcoal/40">
-        <p>Partner institution logos will appear here once approved for use.</p>
+        <p>{translations[lang].common.partnerLogoEmpty}</p>
       </div>
     );
   }
