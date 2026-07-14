@@ -36,9 +36,10 @@ const descriptions = [
 interface Features1Props {
   title: string;
   steps: readonly string[];
+  descriptions?: readonly string[];
 }
 
-export function Features1({ title, steps }: Features1Props) {
+export function Features1({ title, steps, descriptions: customDescriptions }: Features1Props) {
   return (
     <MyContainer>
       <SectionHeading title={title} description="" />
@@ -46,7 +47,7 @@ export function Features1({ title, steps }: Features1Props) {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 md:gap-x-8 md:gap-y-12">
         {steps.map((step, index) => {
           const Icon = icons[index];
-          const description = descriptions[index] || "";
+          const description = (customDescriptions ?? descriptions)[index] || "";
           return (
             <motion.div
               key={index}

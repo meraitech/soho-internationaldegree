@@ -63,8 +63,8 @@ export function Hero4({ buttonLabel }: { buttonLabel: string }) {
     }, [isPaused]);
 
     return (
-        <MyPadding>
-            <section>
+        <section className="bg-surface text-background">
+            <MyPadding>
                 {/* Top Section - Label, Title, Subtitle, and CTA */}
                 <MyContainer>
                     {/* Label */}
@@ -89,6 +89,7 @@ export function Hero4({ buttonLabel }: { buttonLabel: string }) {
                     >
                         <WhatsAppButton
                             label={buttonLabel}
+                            variant="secondary"
                             message="Hello International.degree, I would like to consult about an academic program suitable for my education and professional experience."
                         />
                     </motion.div>
@@ -139,8 +140,8 @@ export function Hero4({ buttonLabel }: { buttonLabel: string }) {
                     </div>
 
                     {/* Gradient overlays for fade effect */}
-                    <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-32 bg-linear-to-r from-background pointer-events-none" />
-                    <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-32 bg-linear-to-l from-background pointer-events-none" />
+                    <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-32 bg-linear-to-r from-surface pointer-events-none" />
+                    <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-32 bg-linear-to-l from-surface pointer-events-none" />
                 </motion.div>
 
                 <style jsx>{`
@@ -149,7 +150,7 @@ export function Hero4({ buttonLabel }: { buttonLabel: string }) {
             }
           `}</style>
 
-            </section>
-        </MyPadding>
+            </MyPadding>
+        </section>
     );
 }

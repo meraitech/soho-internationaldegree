@@ -7,16 +7,17 @@ interface WhatsAppButtonProps {
   message?: string;
   label?: string;
   className?: string;
-  variant?: "primary" | "outline" | "secondary";
+  variant?: "primary" | "outline" | "secondary" | "accent";
   size?: "md" | "lg";
 }
 
 const defaultMessage = "Hello International.degree, I would like to consult about the available international academic programs.";
 
 const variantStyles = {
-  primary: "bg-foreground text-background hover:bg-maroon-light focus-visible:ring-maroon",
+  primary: "bg-foreground text-background",
   secondary: "bg-dark text-white ",
-  outline: "border-2 border-maroon text-maroon hover:bg-maroon hover:text-white focus-visible:ring-maroon",
+  accent: "bg-background text-foreground",
+  outline: "border-2 border-maroon text-maroon hover:bg-maroon hover:text-white",
 };
 
 const sizeStyles = {

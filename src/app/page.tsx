@@ -6,7 +6,6 @@ import { faqs } from "@/data/faqs";
 import SectionHeading from "@/components/SectionHeading";
 import ProgramCard from "@/components/ProgramCard";
 import MyCard from "@/components/ui/my-card";
-import HowItWorks from "@/components/HowItWorks";
 import MyContainer from "@/components/ui/my-container";
 import MyLink from "@/components/ui/my-link";
 import MyPadding from "@/components/ui/my-padding";
@@ -97,11 +96,6 @@ export default async function HomePage() {
 
       {/* How It Works */}
       <Features1 title={t.howItWorksTitle} steps={t.howItWorksSteps} />
-
-      {/* <MyContainer>
-        <SectionHeading title={t.howItWorksTitle} />
-        <HowItWorks steps={t.howItWorksSteps.map((s: string) => s)} />
-      </MyContainer> */}
 
       {/* Suitable Applicants */}
       <MyContainer>

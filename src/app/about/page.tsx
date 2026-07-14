@@ -4,9 +4,13 @@ import { translations } from "@/data/translations";
 import SectionHeading from "@/components/SectionHeading";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MyContainer from "@/components/ui/my-container";
+import MyCard from "@/components/ui/my-card";
 import LegalModal from "@/components/LegalModal";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { Features1 } from "@/components/features-1";
 import Faq4 from "@/components/faq-4";
 import CTA13 from "@/components/cta-13";
+import MyPadding from "@/components/ui/my-padding";
 
 export default async function AboutPage() {
   const cookieStore = await cookies();
@@ -34,41 +38,28 @@ export default async function AboutPage() {
   return (
     <main>
       {/* Page Header */}
-      <section className="bg-gradient-to-br from-burgundy via-maroon to-burgundy text-warm-white py-16 md:py-24">
-        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading leading-tight mb-4">
-              {t.pageTitle}
-            </h1>
-            <p className="text-lg md:text-xl text-warm-white/80 mb-8">
-              {t.pageDescription}
-            </p>
-            <WhatsAppButton
-              label="Consult via WhatsApp"
-              message="Hello International.degree, I would like to learn more about your services and consultation process."
-            />
+      <section className="bg-surface text-background py-16 md:py-24">
+        <MyPadding>
+          <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading leading-tight mb-4">
+                {t.pageTitle}
+              </h1>
+              <p className="text-lg md:text-xl text-warm-white/80 mb-8">
+                {t.pageDescription}
+              </p>
+              <WhatsAppButton
+                label="Consult via WhatsApp"
+                variant="secondary"
+                message="Hello International.degree, I would like to learn more about your services and consultation process."
+              />
+            </div>
           </div>
-        </div>
+        </MyPadding>
       </section>
 
       {/* Our Process */}
-      <MyContainer>
-        <SectionHeading title={t.processTitle} />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {t.processSteps.map((step: string, index: number) => (
-              <div key={index} className="bg-background text-foreground">
-                <div className="p-6">
-                  <div className="flex items-center gap-4 mb-3">
-                    <div className="w-8 h-8 bg-maroon text-warm-white flex items-center justify-center text-sm font-bold">
-                      {index + 1}
-                    </div>
-                  </div>
-                  <p className="text-foreground/70">{step}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-      </MyContainer>
+      <Features1 title={t.processTitle} steps={t.processSteps} descriptions={t.processDescriptions} />
 
       {/* Partner Institution Info */}
       <MyContainer>
@@ -90,41 +81,28 @@ export default async function AboutPage() {
 
       {/* Verification */}
       <MyContainer>
-        <SectionHeading title={t.verificationTitle} />
-          <p className="text-lg text-charcoal/70 leading-relaxed">
-            {t.verificationIntro}
-          </p>
-          <ul className="space-y-3">
-            {t.verificationLinks.map((item: string, index: number) => (
-              <li key={index} className="flex items-center gap-2 text-charcoal/60">
-                <span className="text-gold">&bull;</span>
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p>
-            <a
-              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}?text=${encodeURIComponent("Hello International.degree, I need assistance verifying an institution or credential.")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-maroon font-semibold hover:text-maroon-light transition-colors focus-visible:outline-none focus-visible:underline"
-            >
-              {t.verificationCTA}
-            </a>
-          </p>
+        <SectionHeading
+          title={t.verificationTitle}
+          description={t.verificationIntro}
+          link={{
+            href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}?text=${encodeURIComponent("Hello International.degree, I need assistance verifying an institution or credential.")}`,
+            label: t.verificationCTA
+          }}
+        />
+        <MyCard items={t.verificationLinks.map((item: { title: string; description: string }) => ({ title: item.title, description: item.description }))} />
       </MyContainer>
 
       {/* Academic Disclosure */}
       <MyContainer>
         <SectionHeading title={t.disclosureTitle} />
-          <ul className="space-y-4">
-            {t.disclosureItems.map((item: string, index: number) => (
-              <li key={index} className="flex items-start gap-3 text-charcoal/70">
-                <span className="text-maroon font-bold shrink-0 mt-0.5">*</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+        <ul className="space-y-4">
+          {t.disclosureItems.map((item: string, index: number) => (
+            <li key={index} className="flex items-start gap-3 text-charcoal/70">
+              <span className="text-maroon font-bold shrink-0 mt-0.5">*</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
       </MyContainer>
 
       {/* Legal Information */}

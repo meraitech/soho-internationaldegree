@@ -9,21 +9,21 @@ import {
 import { useRef, useState } from "react";
 
 const logits1 = [
-    { name: "Acme Corp", url: "#", img: "/mock-logos/acmecorp.svg" },
-    { name: "Boltshift", url: "#", img: "/mock-logos/boltshift.svg" },
-    { name: "Capsule", url: "#", img: "/mock-logos/capsule.svg" },
-    { name: "FeatherDev", url: "#", img: "/mock-logos/featherdev.svg" },
-    { name: "GlobalBank", url: "#", img: "/mock-logos/globalbank.svg" },
-    { name: "Interlock", url: "#", img: "/mock-logos/interlock.svg" },
+    { name: "Acme Corp", url: "#", img: "https://ofa.fas.harvard.edu/sites/g/files/omnuum4081/files/hwp_hyard/logo/OFA%20main%20logo_Horizontal_Full%20Color-white-text.png" },
+    { name: "Boltshift", url: "#", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Harvard_University_logo.svg/960px-Harvard_University_logo.svg.png" },
+    { name: "Capsule", url: "#", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/ETH_Z%C3%BCrich_Logo_black.svg/3840px-ETH_Z%C3%BCrich_Logo_black.svg.png" },
+    { name: "FeatherDev", url: "#", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/University_of_Oxford.svg/960px-University_of_Oxford.svg.png?_=20230918031758" },
+    { name: "GlobalBank", url: "#", img: "https://www.standyou.com/uploads/20230719145853_file_UZ.png" },
+    { name: "Interlock", url: "#", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/MIT_Logo_and_Wordmark.svg/3840px-MIT_Logo_and_Wordmark.svg.png" },
 ];
 
 const logits2 = [
-    { name: "Lightbox", url: "#", img: "/mock-logos/lightbox.svg" },
-    { name: "Polymath", url: "#", img: "/mock-logos/polymath.svg" },
-    { name: "Quotient", url: "#", img: "/mock-logos/quotient.svg" },
-    { name: "Sisyphus", url: "#", img: "/mock-logos/sisyphus.svg" },
-    { name: "Spherule", url: "#", img: "/mock-logos/spherule.svg" },
-    { name: "Luminous", url: "#", img: "/mock-logos/luminous.svg" },
+    { name: "Acme Corp", url: "#", img: "https://ofa.fas.harvard.edu/sites/g/files/omnuum4081/files/hwp_hyard/logo/OFA%20main%20logo_Horizontal_Full%20Color-white-text.png" },
+    { name: "Boltshift", url: "#", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Harvard_University_logo.svg/960px-Harvard_University_logo.svg.png" },
+    { name: "Capsule", url: "#", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/ETH_Z%C3%BCrich_Logo_black.svg/3840px-ETH_Z%C3%BCrich_Logo_black.svg.png" },
+    { name: "FeatherDev", url: "#", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/University_of_Oxford.svg/960px-University_of_Oxford.svg.png?_=20230918031758" },
+    { name: "GlobalBank", url: "#", img: "https://www.standyou.com/uploads/20230719145853_file_UZ.png" },
+    { name: "Interlock", url: "#", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/MIT_Logo_and_Wordmark.svg/3840px-MIT_Logo_and_Wordmark.svg.png" },
 ];
 
 const Marquee = ({
