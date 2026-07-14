@@ -1,7 +1,9 @@
+"use client";
+
 import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 import type { Program } from "@/data/programs";
 import type { Lang } from "@/data/settings";
-import MyLink from "./ui/my-link";
 
 interface ProgramCardProps {
   program: Program;
@@ -11,6 +13,7 @@ interface ProgramCardProps {
 }
 
 export default function ProgramCard({ program, lang, viewLabel = "View Programs", whatsappLabel = "Ask via WhatsApp" }: ProgramCardProps) {
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890";
   const whatsappMessage = encodeURIComponent(
     `Hello International.degree, I would like to learn more about the ${program.name[lang]}.`
   );
@@ -32,12 +35,20 @@ export default function ProgramCard({ program, lang, viewLabel = "View Programs"
           {program.description[lang]}
         </p>
         <div className="mt-auto space-y-4">
-          <MyLink
-            variant="secondary"
-            link={{
-              href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}?text=${whatsappMessage}`,
-              label: whatsappLabel
-            }} />
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, "_blank");
+            }}
+            className="mt-4 font-semibold flex items-center max-w-sm gap-3 group cursor-pointer"
+          >
+            <FaArrowRightLong className="h-10 w-10 p-3 rounded-full shrink-0 aspect-square text-foreground bg-background" />
+            <span className="group-hover:underline">
+              {whatsappLabel}
+            </span>
+          </button>
         </div>
       </div>
       {/* {viewLabel} */}

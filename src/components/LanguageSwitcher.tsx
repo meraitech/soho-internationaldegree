@@ -3,12 +3,15 @@
 import { useCallback } from "react";
 import type { Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
+import { cn } from "@/lib/utils";
+import { IoLanguage } from "react-icons/io5";
 
 interface LanguageSwitcherProps {
   currentLang: Lang;
+  className?: string;
 }
 
-export default function LanguageSwitcher({ currentLang }: LanguageSwitcherProps) {
+export default function LanguageSwitcher({ currentLang, className = "" }: LanguageSwitcherProps) {
   const toggleLang = useCallback(() => {
     const nextLang = currentLang === "en" ? "id" : "en";
     document.cookie = `lang=${nextLang};path=/;max-age=${60 * 60 * 24 * 365}`;
@@ -20,9 +23,10 @@ export default function LanguageSwitcher({ currentLang }: LanguageSwitcherProps)
   return (
     <button
       onClick={toggleLang}
-      className="px-3 py-1.5 text-sm font-medium  border border-charcoal/20 hover:border-gold hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
+      className={cn("font-medium transition-colors cursor-pointer flex items-center justify-center gap-2", className)}
       aria-label={`Switch to ${translations[currentLang].language}`}
     >
+      <IoLanguage />
       {label}
     </button>
   );

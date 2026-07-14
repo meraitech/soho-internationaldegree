@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { Lang } from "@/data/settings";
@@ -17,16 +17,32 @@ export default function Header({ lang }: HeaderProps) {
   const pathname = usePathname();
   const t = translations[lang].nav;
 
-  const isHome = pathname === "/";
-  const [scrolled, setScrolled] = useState(!isHome);
+  const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const prevScrollY = useRef(0);
 
   useEffect(() => {
-    if (!isHome) return;
-    const handleScroll = () => setScrolled(window.scrollY > 100);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setScrolled(currentScrollY > 100);
+
+      if (currentScrollY > 200 && currentScrollY > prevScrollY.current) {
+        setVisible(false);
+      } else if (currentScrollY < prevScrollY.current || currentScrollY < 200) {
+        setVisible(true);
+      }
+
+      prevScrollY.current = currentScrollY;
+    };
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isHome]);
+  }, []);
+
+  useEffect(() => {
+    if (!visible) setMobileOpen(false);
+  }, [visible]);
 
   const navLinks = [
     { href: "/", label: t.home },
@@ -39,18 +55,19 @@ export default function Header({ lang }: HeaderProps) {
     return pathname.startsWith(href);
   };
 
-  const transparent = isHome && !scrolled;
+  const transparent = !scrolled;
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${transparent
-        ? "bg-transparent"
-        : "bg-surface text-background"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${visible ? "translate-y-0" : "-translate-y-full"
+        } ${!visible ? "" : transparent
+          ? "bg-transparent"
+          : "bg-surface text-background shadow-sm"
         }`}
     >
-      <div className="px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          <Link href="/" className="flex items-center gap-2">
+      <div >
+        <div className="flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-2 px-6 lg:px-8">
             <span
               className={`font-heading text-xl font-semibold hidden sm:inline transition-colors ${transparent ? "text-warm-white" : "text-maroon"
                 }`}
@@ -59,27 +76,32 @@ export default function Header({ lang }: HeaderProps) {
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`text-base font-medium transition-colors focus-visible:outline-none ${isActive(link.href)
-                  ? transparent
-                    ? "text-warm-white"
-                    : "text-maroon"
-                  : transparent
-                    ? "text-warm-white/70 hover:text-warm-white"
-                    : "text-charcoal/70 hover:text-maroon"
-                  }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <LanguageSwitcher currentLang={lang} />
+          <nav className="hidden md:flex items-center">
+            <div className="md:flex items-center gap-8 mr-8">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`text-base font-medium transition-colors focus-visible:outline-none ${isActive(link.href)
+                    ? transparent
+                      ? "text-warm-white"
+                      : "text-maroon"
+                    : transparent
+                      ? "text-warm-white/70 hover:text-warm-white"
+                      : "text-charcoal/70 hover:text-maroon"
+                    }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+            <LanguageSwitcher
+              className="text-lg h-16 md:h-20 bg-dark text-white px-6 py-3 lg:px-8 lg:py-4 border-r border-white/20"
+              currentLang={lang} />
             <WhatsAppButton
               label={t.consult}
               variant="secondary"
+              className="h-16 md:h-20 text-lg"
               message="Hello International.degree, I would like to consult about an academic program suitable for my education and professional experience."
             />
           </nav>
@@ -126,13 +148,14 @@ export default function Header({ lang }: HeaderProps) {
                 {link.label}
               </Link>
             ))}
-            <div className="pt-2">
+            <div className="h-16 md:h-20">
               <LanguageSwitcher currentLang={lang} />
             </div>
 
             <WhatsAppButton
               label={t.consult}
               variant="secondary"
+              className="h-16 md:h-20"
               message="Hello International.degree, I would like to consult about an academic program suitable for my education and professional experience."
             />
           </div>

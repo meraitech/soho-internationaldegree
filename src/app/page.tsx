@@ -2,30 +2,22 @@ import { cookies } from "next/headers";
 import type { Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
 import { programs } from "@/data/programs";
-import { institutions } from "@/data/institutions";
 import { faqs } from "@/data/faqs";
 import SectionHeading from "@/components/SectionHeading";
 import ProgramCard from "@/components/ProgramCard";
-import PartnerLogoGrid from "@/components/PartnerLogoGrid";
-import TrustItems from "@/components/TrustItems";
+import MyCard from "@/components/ui/my-card";
 import HowItWorks from "@/components/HowItWorks";
-import FinalCTA from "@/components/FinalCTA";
 import MyContainer from "@/components/ui/my-container";
 import MyLink from "@/components/ui/my-link";
 import MyPadding from "@/components/ui/my-padding";
 import CertificateItems from "@/components/Certificate";
 import { certificates } from "@/data/certificates";
-import {
-  FaBriefcase,
-  FaUserCheck,
-  FaCrown,
-  FaUsers,
-  FaUserGear,
-} from "react-icons/fa6";
+
 import { Hero4 } from "@/components/Hero4";
 import Faq4 from "@/components/faq-4";
 import CTA13 from "@/components/cta-13";
 import { SocialProof9 } from "@/components/social-proof-9";
+import { Features1 } from "@/components/features-1";
 
 export default async function HomePage() {
   const cookieStore = await cookies();
@@ -46,7 +38,7 @@ export default async function HomePage() {
           description="Credibility built on international accreditation and transparent academic pathways for experienced professionals."
           link={{ href: "#", label: "See how your experience can be recognized" }}
         />
-        <TrustItems items={t.trustItems.map((item: { title: string; description: string }) => ({ title: item.title, description: item.description }))} />
+        <MyCard items={t.trustItems.map((item: { title: string; description: string }) => ({ title: item.title, description: item.description }))} />
       </MyContainer>
 
       {/* About International.degree */}
@@ -104,6 +96,7 @@ export default async function HomePage() {
 
 
       {/* How It Works */}
+      <Features1 />
       <MyContainer>
         <SectionHeading title={t.howItWorksTitle} />
         <HowItWorks steps={t.howItWorksSteps.map((s: string) => s)} />
@@ -115,23 +108,7 @@ export default async function HomePage() {
           title={t.suitableTitle}
           description={t.suitableDescription}
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            <FaBriefcase />,
-            <FaUserCheck />,
-            <FaCrown />,
-            <FaUsers />,
-            <FaUserGear />,
-          ].map((icon, index) => (
-            <div
-              key={index}
-              className="flex items-center gap-4 px-6 py-5 bg-surface text-background"
-            >
-              <span className="text-xl text-gold shrink-0">{icon}</span>
-              <span className="text-charcoal/80 font-medium">{t.suitableList[index]}</span>
-            </div>
-          ))}
-        </div>
+        <MyCard items={t.suitableItems.map((item: { title: string }, i: number) => ({ title: item.title, imageSrc: `/img/suitable-${i + 1}.jpg` }))} />
       </MyContainer>
 
       {/* Partner Institutions */}

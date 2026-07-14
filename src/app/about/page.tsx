@@ -1,28 +1,17 @@
 import { cookies } from "next/headers";
 import type { Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
-import { faqs } from "@/data/faqs";
 import SectionHeading from "@/components/SectionHeading";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MyContainer from "@/components/ui/my-container";
-import FinalCTA from "@/components/FinalCTA";
 import LegalModal from "@/components/LegalModal";
-import {
-  FaHandshake,
-  FaUserGraduate,
-  FaClipboardList,
-  FaFilePen,
-  FaPaperPlane,
-  FaComments,
-  FaShieldHalved,
-} from "react-icons/fa6";
 import Faq4 from "@/components/faq-4";
+import CTA13 from "@/components/cta-13";
 
 export default async function AboutPage() {
   const cookieStore = await cookies();
   const lang = (cookieStore.get("lang")?.value as Lang) || "en";
   const t = translations[lang].about;
-  const aboutFaqs = faqs.about;
 
   const legalSections = [
     {
@@ -46,7 +35,7 @@ export default async function AboutPage() {
     <main>
       {/* Page Header */}
       <section className="bg-gradient-to-br from-burgundy via-maroon to-burgundy text-warm-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading leading-tight mb-4">
               {t.pageTitle}
@@ -62,41 +51,9 @@ export default async function AboutPage() {
         </div>
       </section>
 
-      {/* Our Story */}
-      <section className="bg-surface text-background">
-        <MyContainer>
-          <SectionHeading title={t.storyTitle} />
-          <p className="text-lg text-charcoal/70 leading-relaxed">
-            {t.storyContent}
-          </p>
-        </MyContainer>
-      </section>
-
-      {/* Our Role */}
-      <MyContainer>
-        <SectionHeading title={t.roleTitle} />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {[
-            <FaHandshake />,
-            <FaUserGraduate />,
-            <FaClipboardList />,
-            <FaPaperPlane />,
-            <FaComments />,
-            <FaShieldHalved />,
-            <FaFilePen />,
-          ].map((icon, index) => (
-            <div key={index} className="flex items-center gap-4 px-6 py-5 bg-surface text-background">
-              <span className="text-xl text-gold shrink-0">{icon}</span>
-              <span className="text-charcoal/80">{t.roleList[index]}</span>
-            </div>
-          ))}
-        </div>
-      </MyContainer>
-
       {/* Our Process */}
-      <section className="bg-surface text-background">
-        <MyContainer>
-          <SectionHeading title={t.processTitle} />
+      <MyContainer>
+        <SectionHeading title={t.processTitle} />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {t.processSteps.map((step: string, index: number) => (
               <div key={index} className="bg-background text-foreground">
@@ -111,8 +68,7 @@ export default async function AboutPage() {
               </div>
             ))}
           </div>
-        </MyContainer>
-      </section>
+      </MyContainer>
 
       {/* Partner Institution Info */}
       <MyContainer>
@@ -133,9 +89,8 @@ export default async function AboutPage() {
       </MyContainer>
 
       {/* Verification */}
-      <section className="bg-surface text-background">
-        <MyContainer>
-          <SectionHeading title={t.verificationTitle} />
+      <MyContainer>
+        <SectionHeading title={t.verificationTitle} />
           <p className="text-lg text-charcoal/70 leading-relaxed">
             {t.verificationIntro}
           </p>
@@ -157,13 +112,11 @@ export default async function AboutPage() {
               {t.verificationCTA}
             </a>
           </p>
-        </MyContainer>
-      </section>
+      </MyContainer>
 
       {/* Academic Disclosure */}
-      <section id="disclosure" className="bg-warm-white border-y border-charcoal/10">
-        <MyContainer>
-          <SectionHeading title={t.disclosureTitle} />
+      <MyContainer>
+        <SectionHeading title={t.disclosureTitle} />
           <ul className="space-y-4">
             {t.disclosureItems.map((item: string, index: number) => (
               <li key={index} className="flex items-start gap-3 text-charcoal/70">
@@ -172,8 +125,7 @@ export default async function AboutPage() {
               </li>
             ))}
           </ul>
-        </MyContainer>
-      </section>
+      </MyContainer>
 
       {/* Legal Information */}
       <MyContainer>
@@ -190,15 +142,7 @@ export default async function AboutPage() {
       <Faq4 />
 
       {/* Final CTA */}
-      <section className="py-16 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FinalCTA
-            headline={t.finalCTA}
-            description={t.finalCTADescription}
-            ctaMessage="Hello International.degree, I would like to learn more about your services and consultation process."
-          />
-        </div>
-      </section>
+      <CTA13 />
     </main>
   );
 }

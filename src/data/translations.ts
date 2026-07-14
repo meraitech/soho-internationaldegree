@@ -4,7 +4,7 @@ export const translations = {
       home: "Home",
       programs: "Programs",
       about: "About Us",
-      consult: "Consult via WhatsApp",
+      consult: "Consult",
     },
     home: {
       heroHeadline: "International Degree",
@@ -35,12 +35,10 @@ export const translations = {
       ],
       suitableTitle: "Suitable for You?",
       suitableDescription: "Our programs are designed for experienced professionals who want to earn internationally recognized credentials.",
-      suitableList: [
-        "Business owners",
-        "Senior professionals",
-        "Executives",
-        "Organization leaders",
-        "Experienced professionals",
+      suitableItems: [
+        { title: "Business owners" },
+        { title: "Experienced Professionals" },
+        { title: "Executives" },
       ],
       partnersTitle: "Partner Institutions",
       partnersDescription: "We work with accredited international institutions committed to recognizing professional experience.",
@@ -165,7 +163,7 @@ export const translations = {
       home: "Beranda",
       programs: "Program",
       about: "Tentang Kami",
-      consult: "Konsultasi via WhatsApp",
+      consult: "Konsultasi",
     },
     home: {
       heroHeadline: "Kesempatan Akademik Internasional",
@@ -197,12 +195,10 @@ export const translations = {
       ],
       suitableTitle: "Cocok untuk Anda?",
       suitableDescription: "Program kami dirancang untuk profesional berpengalaman yang ingin mendapatkan kredensial yang diakui secara internasional.",
-      suitableList: [
-        "Pemilik bisnis",
-        "Profesional senior",
-        "Eksekutif",
-        "Pemimpin organisasi",
-        "Profesional berpengalaman",
+      suitableItems: [
+        { title: "Pemilik bisnis" },
+        { title: "Profesional Berpengalaman" },
+        { title: "Eksekutif" },
       ],
       partnersTitle: "Institusi Mitra",
       partnersDescription: "Kami bekerja dengan institusi internasional terakreditasi yang berkomitmen mengakui pengalaman profesional.",

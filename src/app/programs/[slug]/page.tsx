@@ -6,7 +6,6 @@ import type { Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
 import { programs, getProgramBySlug } from "@/data/programs";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import FinalCTA from "@/components/FinalCTA";
 import {
   FaUserCheck,
   FaClipboardCheck,
@@ -17,6 +16,8 @@ import {
   FaSackDollar,
   FaCertificate,
 } from "react-icons/fa6";
+import CTA13 from "@/components/cta-13";
+import MyContainer from "@/components/ui/my-container";
 
 export async function generateStaticParams() {
   return programs
@@ -46,7 +47,7 @@ export default async function ProgramDetailPage({
     <main>
       {/* Program Detail */}
       <section className="bg-gradient-to-br from-burgundy via-maroon to-burgundy text-warm-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-360 mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             href="/programs"
             className="inline-flex items-center text-warm-white/60 hover:text-warm-white transition-colors mb-6 text-sm"
@@ -71,8 +72,7 @@ export default async function ProgramDetailPage({
         </div>
       </section>
 
-      <section className="py-16 md:py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <MyContainer>
           {/* Overview */}
           <div className="mb-14">
             <h2 className="text-2xl font-heading font-semibold text-maroon mb-4">{d.overview}</h2>
@@ -112,18 +112,10 @@ export default async function ProgramDetailPage({
               size="lg"
             />
           </div>
-        </div>
-      </section>
+      </MyContainer>
 
-      <section className="py-16 md:py-20 bg-surface text-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <FinalCTA
-            headline={t.finalCTA}
-            description={t.finalCTADescription}
-            ctaMessage={whatsappMessage}
-          />
-        </div>
-      </section>
+      {/* Final CTA */}
+      <CTA13 />
     </main>
   );
 }
