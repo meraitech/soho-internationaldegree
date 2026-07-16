@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import { FiArrowUpRight } from "react-icons/fi";
-import type { Lang } from "@/data/settings";
+import { settings, type Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
 
 const containerVariants = {
@@ -38,7 +38,7 @@ export default function Footer1({ lang }: { lang: Lang }) {
     {
       title: t.contact,
       links: [
-        { text: t.consult, href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}`, external: true },
+        { text: t.consult, href: `https://wa.me/${settings.whatsappNumber}`, external: true },
       ],
     },
   ];

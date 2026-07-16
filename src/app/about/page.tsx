@@ -1,5 +1,5 @@
 import { cookies } from "next/headers";
-import type { Lang } from "@/data/settings";
+import { settings, type Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
 import { faqs } from "@/data/faqs";
 import SectionHeading from "@/components/SectionHeading";
@@ -88,7 +88,7 @@ export default async function AboutPage() {
           title={t.verificationTitle}
           description={t.verificationIntro}
           link={{
-            href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}?text=${encodeURIComponent(homeT.whatsappAbout)}`,
+            href: `https://wa.me/${settings.whatsappNumber}?text=${encodeURIComponent(homeT.whatsappAbout)}`,
             label: t.verificationCTA
           }}
         />

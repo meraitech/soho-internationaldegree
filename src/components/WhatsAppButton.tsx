@@ -1,6 +1,7 @@
 "use client";
 
 import { FaWhatsapp } from "react-icons/fa6";
+import { settings } from "@/data/settings";
 
 interface WhatsAppButtonProps {
   message?: string;
@@ -29,7 +30,7 @@ export default function WhatsAppButton({
   variant = "primary",
   size = "lg",
 }: WhatsAppButtonProps) {
-  const href = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}?text=${encodeURIComponent(message)}`
+  const href = `https://wa.me/${settings.whatsappNumber}?text=${encodeURIComponent(message)}`
 
   return (
     <a

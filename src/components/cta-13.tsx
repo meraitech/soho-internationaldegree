@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion, type Variants } from "motion/react";
 import { BsAsterisk } from "react-icons/bs";
-import type { Lang } from "@/data/settings";
+import { settings, type Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
 
 const mulberry32 = (seed: number) => {
@@ -174,7 +174,7 @@ export default function CTA13({ lang }: { lang: Lang }) {
 
             <motion.div variants={item} className="mt-10 w-full sm:w-auto">
               <motion.a
-                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890"}?text=${encodeURIComponent("Hello International.degree, " + t.finalCTA.toLowerCase())}`}
+                href={`https://wa.me/${settings.whatsappNumber}?text=${encodeURIComponent("Hello International.degree, " + t.finalCTA.toLowerCase())}`}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
                 className="inline-flex w-full cursor-pointer items-center justify-center bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white transition-colors hover:bg-neutral-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-100 sm:w-auto dark:bg-white dark:text-neutral-950 dark:hover:bg-neutral-200 dark:focus-visible:ring-white dark:focus-visible:ring-offset-neutral-900"

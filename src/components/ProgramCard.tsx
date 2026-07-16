@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import type { Program } from "@/data/programs";
-import type { Lang } from "@/data/settings";
+import { settings, type Lang } from "@/data/settings";
 
 interface ProgramCardProps {
   program: Program;
@@ -13,7 +13,7 @@ interface ProgramCardProps {
 }
 
 export default function ProgramCard({ program, lang, viewLabel = "View Programs", whatsappLabel = "Ask via WhatsApp" }: ProgramCardProps) {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+1234567890";
+  const whatsappNumber = settings.whatsappNumber;
   const whatsappMessage = encodeURIComponent(
     `Hello International.degree, I would like to learn more about the ${program.name[lang]}.`
   );
