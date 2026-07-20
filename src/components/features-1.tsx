@@ -2,25 +2,17 @@
 
 import { motion } from "motion/react";
 import {
-  FaWhatsapp,
-  FaPaperPlane,
-  FaClipboardCheck,
+  FaFileLines,
   FaStar,
-  FaHandshake,
-  FaCircleCheck,
-  FaCertificate,
+  FaMoneyBill,
 } from "react-icons/fa6";
 import SectionHeading from "./SectionHeading";
 import MyContainer from "./ui/my-container";
 
 const icons = [
-  FaWhatsapp,
-  FaPaperPlane,
-  FaClipboardCheck,
+  FaFileLines,
   FaStar,
-  FaHandshake,
-  FaCircleCheck,
-  FaCertificate,
+  FaMoneyBill,
 ];
 
 interface Features1Props {

@@ -25,13 +25,13 @@ export async function generateMetadata() {
 
   return {
     title: {
-      default: t.heroHeadline + " — " + t.heroDescription.split(".")[0],
+      default: "International.degree — Higher Degree Conferral Through Recognition of Prior Learning (RPL)",
       template: "%s | International.degree",
     },
-    description: t.heroDescription,
+    description: "International.degree provides higher degree conferral based on the Recognition of Prior Learning (RPL) framework. Nationally accredited degrees (S1, S2, S3) and internationally non-accredited degrees (B.Sc., M.Sc., Dr.Hc., Prof.Hc.) for professionals aged 30+ with SLTA minimum qualification.",
     openGraph: {
-      title: t.heroHeadline,
-      description: t.heroDescription,
+      title: "International.degree — Degree Conferral Through RPL",
+      description: "Higher degree conferral based on Recognition of Prior Learning (RPL). Nationally and internationally accredited degree pathways for experienced professionals aged 30+.",
       type: "website",
       locale: lang === "id" ? "id_ID" : "en_US",
       siteName: "International.degree",

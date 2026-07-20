@@ -19,17 +19,17 @@ export const institutions: Institution[] = [
   {
     slug: "sample-university",
     name: "Sample International University",
-    country: "United Kingdom",
+    country: "Indonesia",
     website: "https://example.edu",
     logoLabel: "SIU",
-    accreditationBody: "UK Accreditation Council",
+    accreditationBody: "National Accreditation Agency (BAN-PT) / International Accreditation Body",
     partnershipDescription: {
-      en: "Partner institution offering international degree pathways for experienced professionals.",
-      id: "Institusi mitra yang menyediakan jalur gelar internasional bagi profesional berpengalaman.",
+      en: "Accredited university partner offering degree conferral through the Recognition of Prior Learning (RPL) framework for experienced professionals aged 30+.",
+      id: "Mitra universitas terakreditasi yang menyediakan pemberian gelar melalui kerangka Recognition of Prior Learning (RPL) bagi profesional berpengalaman berusia 30+.",
     },
     credentialIssuerDescription: {
-      en: "All credentials are issued directly by Sample International University.",
-      id: "Semua kredensial diterbitkan langsung oleh Sample International University.",
+      en: "All degrees are conferred and issued directly by the partner university based on RPL assessment.",
+      id: "Semua gelar diberikan dan diterbitkan langsung oleh universitas mitra berdasarkan penilaian RPL.",
     },
   },
 ];

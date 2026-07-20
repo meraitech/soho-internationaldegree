@@ -12,11 +12,17 @@ interface ProgramCardProps {
   whatsappLabel?: string;
 }
 
-export default function ProgramCard({ program, lang, viewLabel = "View Programs", whatsappLabel = "Ask via WhatsApp" }: ProgramCardProps) {
+export default function ProgramCard({ program, lang, viewLabel = "View Details", whatsappLabel = "Ask via WhatsApp" }: ProgramCardProps) {
   const whatsappNumber = settings.whatsappNumber;
   const whatsappMessage = encodeURIComponent(
     `Hello International.degree, I would like to learn more about the ${program.name[lang]}.`
   );
+
+  const formattedFee = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 0,
+  }).format(program.fee);
 
   return (
     <Link
@@ -35,6 +41,9 @@ export default function ProgramCard({ program, lang, viewLabel = "View Programs"
           {program.description[lang]}
         </p>
         <div className="mt-auto space-y-4">
+          <div className="text-lg font-heading text-maroon">
+            {formattedFee}
+          </div>
           <button
             type="button"
             onClick={(e) => {
@@ -51,7 +60,6 @@ export default function ProgramCard({ program, lang, viewLabel = "View Programs"
           </button>
         </div>
       </div>
-      {/* {viewLabel} */}
     </Link>
   );
 }
