@@ -1,8 +1,10 @@
+import Image from "next/image";
 import { cookies } from "next/headers";
 import type { Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
 import { programs } from "@/data/programs";
 import { faqs } from "@/data/faqs";
+import { images } from "@/lib/images";
 import SectionHeading from "@/components/SectionHeading";
 import ProgramCard from "@/components/ProgramCard";
 import MyCard from "@/components/ui/my-card";
@@ -49,7 +51,7 @@ export default async function HomePage() {
         />
         <div className="w-full relative flex px-4 sm:px-6 lg:px-8 h-180 items-center">
           <div className="absolute inset-0 w-1/2 h-full bg-linear-to-r from-black z-1" />
-          <img src="/img/about.jpg" alt={t.aboutTitle} className="absolute inset-0 w-full h-full object-cover z-0 opacity-70" />
+          <Image src={images.about} alt={t.aboutTitle} className="absolute inset-0 w-full h-full object-cover z-0 opacity-70" />
           <div className="flex flex-col gap-4 z-10 max-w-xl">
             <p >
               {t.aboutDescription}
@@ -103,7 +105,7 @@ export default async function HomePage() {
           title={t.suitableTitle}
           description={t.suitableDescription}
         />
-        <MyCard items={t.suitableItems.map((item: { title: string }, i: number) => ({ title: item.title, imageSrc: `/img/suitable-${i + 1}.jpg` }))} />
+        <MyCard items={t.suitableItems.map((item: { title: string }, i: number) => ({ title: item.title, imageSrc: images.suitable[i].src }))} />
       </MyContainer>
 
       {/* Partner Institutions */}

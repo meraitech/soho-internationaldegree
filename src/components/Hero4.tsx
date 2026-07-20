@@ -2,32 +2,23 @@
 
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
+import { images } from "@/lib/images";
 import MyContainer from "./ui/my-container";
 import MyPadding from "./ui/my-padding";
 import WhatsAppButton from "./WhatsAppButton";
+
+const heroImages = images.hero.carousel;
 
 export function Hero4({ buttonLabel, headline, whatsappMessage }: { buttonLabel: string; headline: string; whatsappMessage?: string }) {
     const [isPaused, setIsPaused] = useState(false);
     const scrollRef = useRef<HTMLDivElement>(null);
     const scrollPositionRef = useRef(0);
 
-    const imgs = [
-        {
-            id: 1,
-            src: "/img/hero1.jpg",
-            alt: "Hero image 1",
-        },
-        {
-            id: 2,
-            src: "/img/hero2.jpg",
-            alt: "Hero image 2",
-        },
-        {
-            id: 3,
-            src: "/img/hero3.jpg",
-            alt: "Hero image 3",
-        },
-    ];
+    const imgs = heroImages.map((img, i) => ({
+        id: i + 1,
+        src: img.src,
+        alt: `Hero image ${i + 1}`,
+    }));
 
     const allImgs = [...imgs, ...imgs, ...imgs];
 

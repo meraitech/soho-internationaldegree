@@ -2,17 +2,25 @@
 
 import { motion } from "motion/react";
 import {
+  FaComments,
   FaFileLines,
+  FaClipboardCheck,
   FaStar,
-  FaMoneyBill,
+  FaPenToSquare,
+  FaHeadset,
+  FaCertificate,
 } from "react-icons/fa6";
 import SectionHeading from "./SectionHeading";
 import MyContainer from "./ui/my-container";
 
 const icons = [
+  FaComments,
   FaFileLines,
+  FaClipboardCheck,
   FaStar,
-  FaMoneyBill,
+  FaPenToSquare,
+  FaHeadset,
+  FaCertificate,
 ];
 
 interface Features1Props {

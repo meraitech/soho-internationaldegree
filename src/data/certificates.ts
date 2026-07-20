@@ -1,6 +1,9 @@
+import type { StaticImageData } from "next/image";
+import { certificateImageMap } from "@/lib/images";
+
 export interface Certificate {
   slug: string;
-  image: string;
+  image: StaticImageData;
   title: { en: string; id: string };
   description: { en: string; id: string };
 }
@@ -8,7 +11,7 @@ export interface Certificate {
 export const certificates: Certificate[] = [
   {
     slug: "iao-incorporation",
-    image: "/certificates/iao-incorporation.jpg",
+    image: certificateImageMap["iao-incorporation"],
     title: {
       en: "Certificate of Incorporation — IAO",
       id: "Certificate of Incorporation IAO",
@@ -20,7 +23,7 @@ export const certificates: Certificate[] = [
   },
   {
     slug: "us-education-approval",
-    image: "/certificates/us-education-approval.jpg",
+    image: certificateImageMap["us-education-approval"],
     title: {
       en: "US Department of Education Approval Letter",
       id: "US Department of Education Approval Letter",
@@ -32,7 +35,7 @@ export const certificates: Certificate[] = [
   },
   {
     slug: "usdla-member",
-    image: "/certificates/usdla-member.jpg",
+    image: certificateImageMap["usdla-member"],
     title: {
       en: "USDLA Non-Profit Member Certificate",
       id: "USDLA Non Profit Member Certificate",
@@ -44,7 +47,7 @@ export const certificates: Certificate[] = [
   },
   {
     slug: "iao-international-accreditation",
-    image: "/certificates/iao-international-accreditation.jpg",
+    image: certificateImageMap["iao-international-accreditation"],
     title: {
       en: "Certificate of International Accreditation — IAO",
       id: "Certificate of International Accreditation",

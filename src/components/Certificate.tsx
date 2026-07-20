@@ -11,6 +11,7 @@ import {
 } from "motion/react";
 import Image from "next/image";
 import { useRef, useState, type MouseEvent, type ReactNode } from "react";
+import type { StaticImageData } from "next/image";
 import type { Certificate } from "@/data/certificates";
 import type { Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
@@ -27,7 +28,7 @@ export default function CertificateItems({ items, lang }: CertificateItemsProps)
   const prefersReducedMotion = useReducedMotion();
   const listRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState<number | null>(null);
-  const [modalImage, setModalImage] = useState<string | null>(null);
+  const [modalImage, setModalImage] = useState<StaticImageData | string | null>(null);
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
