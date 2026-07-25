@@ -1,4 +1,5 @@
 import { cookies } from "next/headers";
+import type { Metadata } from "next";
 import { settings, type Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
 import { faqs } from "@/data/faqs";
@@ -12,6 +13,24 @@ import { Features1 } from "@/components/features-1";
 import Faq4 from "@/components/faq-4";
 import CTA13 from "@/components/cta-13";
 import MyPadding from "@/components/ui/my-padding";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const cookieStore = await cookies();
+  const lang = (cookieStore.get("lang")?.value as Lang) || "en";
+  const t = translations[lang].seo.about;
+  return {
+    title: t.title,
+    description: t.description,
+    openGraph: {
+      title: t.title,
+      description: t.description,
+    },
+    twitter: {
+      title: t.title,
+      description: t.description,
+    },
+  };
+}
 
 export default async function AboutPage() {
   const cookieStore = await cookies();

@@ -9,20 +9,22 @@ International.degree
 Degree conferral service platform based on Recognition of Prior Learning (RPL)
 
 ### Primary Goal
-Help experienced professionals (30+ years old, SLTA minimum) obtain higher education degrees through RPL-based degree conferral from nationally and internationally accredited universities.
+Help experienced professionals who already have college experience or professional credentials obtain formal academic recognition — quickly, affordably, and through accredited pathways.
 
 ### Target Users
-- Professionals aged 30+ years
-- Holders of minimum Senior High School (SLTA) qualification
-- Individuals with established competence in their respective field
+- Professionals who have attended college (completed or incomplete) but have no formal degree
+- Experienced professionals aged 30+ with established competence in their field
+- Individuals seeking fast, affordable, accredited qualification pathways
 - Business owners, senior professionals, executives, organization leaders
+- Individuals seeking honorary recognition for lifetime achievement
 
 ### Main Value Proposition
-- Degree conferral based on existing professional experience (no traditional study required)
-- Nationally accredited degrees (Indonesia) and internationally non-accredited degrees
-- Simple 3-step process: CV submission, degree selection, payment
-- Fixed transparent fee structure
-- Personal consultation throughout the process
+- Already in college? Complete your degree fast, affordably, and accredited (A & EAO)
+- Professional experience deserves formal academic recognition — no need to start over
+- 5 qualification paths: bachelor, master, doctoral, honorary, professional certificate
+- Nationally accredited (A) and internationally recognized (EAO) pathways
+- WhatsApp-based consultation throughout the process
+- Market is mature (lots of experience) but lacks formal recognition (degree)
 
 ---
 
@@ -32,11 +34,11 @@ Help experienced professionals (30+ years old, SLTA minimum) obtain higher educa
 - Professional and trustworthy
 - Large, readable typography
 - Minimal navigation
-- Clear fee structure displayed publicly
+- WhatsApp-first consultation model (all CTAs direct to WA)
 - Transparent RPL-based degree conferral model
 - No misleading academic claims
 - No guaranteed admission or degree conferral
-- Every main CTA directs users to WhatsApp
+- Fees disclosed only through WhatsApp consultation, not displayed publicly
 
 ---
 
@@ -55,22 +57,20 @@ Additional legal content is included within About Us or opened as a modal/sectio
 ## 4. Main User Flow
 
 1. User opens the Home page
-2. User reads about RPL-based degree conferral
-3. User reviews available degree categories and fees
-4. User reviews eligibility requirements (30+, SLTA, established competence)
-5. User reads the 3-step process
-6. User selects a degree or WhatsApp consultation
-7. WhatsApp opens with a prefilled message
-8. Academic advisor continues the consultation manually
+2. User reads about fast degree completion for experienced professionals
+3. User sees 5 qualification paths and selects one
+4. User reads more about the qualification or contacts via WhatsApp
+5. WhatsApp opens with a prefilled message about the selected qualification
+6. Academic advisor continues the consultation manually
 
 Alternative flow:
 
 1. User opens the Programs page
-2. User filters by degree category (Nationally Accredited / Internationally Non-Accredited)
-3. User selects a degree program
-4. User reads the degree details including fee
-5. User clicks Ask via WhatsApp
-6. WhatsApp opens with the selected program included in the message
+2. User sees the question "What qualification are you aiming for?" with 5 options
+3. User selects a qualification type
+4. User reads the qualification overview and key benefits
+5. User clicks Ask via WhatsApp or contacts for more info
+6. WhatsApp opens with the selected qualification included in the message
 
 ---
 
@@ -82,7 +82,7 @@ Alternative flow:
 Content:
 - International.degree logo
 - Home
-- Programs
+- Programs (Degrees)
 - About Us
 - Consultation via WhatsApp button
 
@@ -93,25 +93,25 @@ Behavior:
 
 #### Hero Section
 Content:
-- Main headline about degree conferral through RPL
-- Short supporting description
+- Main headline about degree completion (already in college, fast & affordable)
+- Short supporting description mentioning accreditation (A & EAO)
 - Professional image
-- Consultation via WhatsApp button
+- Info via WhatsApp button
 
 Suggested headline:
-> International Degree Conferral Based on Your Experience
+> Already in College? Complete Your Degree Fast & Affordably
 
 Suggested description:
-> Higher degree conferral through the Recognition of Prior Learning (RPL) framework, awarded by nationally and internationally accredited universities and honorary institutions.
+> Nationally accredited (A) & internationally recognized (EAO) degrees based on your work experience and prior learning. Fast completion, affordable fees. Click WhatsApp for info.
 
 CTA:
-- Consult via WhatsApp
+- Info via WhatsApp
 
 #### Trust Information
 Content:
 - RPL-Based Recognition — professional experience evaluated for degree conferral
 - Accredited Universities — degrees from nationally/internationally accredited partners
-- Simple 3-Step Process — CV, degree choice, payment
+- Simple Process — initial consultation, document review, eligibility check
 
 Display:
 - Three simple trust items
@@ -127,31 +127,33 @@ Content:
 CTA:
 - Learn More About Us
 
-#### Available Degrees
+#### Your Qualification Path
 Content:
-- Nationally Accredited Degrees:
-  - Bachelor's Level (S1): SE., SM., S.Pd., S.Kom. — USD 2,000
-  - Master's Level (S2): MM., M.Pd., M.Si. — USD 3,000
-  - Doctoral Level (S3): DBA, Ed.D., Ph.D. — USD 6,000
-- Internationally Non-Accredited Degrees:
-  - B.Sc. — USD 200
-  - M.Sc. — USD 400
-  - Dr.Hc. (Doctor Honoris Causa) — USD 1,000
-  - Prof.Hc. (Professor Honoris Causa) — USD 2,000
+- 5 qualification types displayed as selectable cards:
+  - 🎓 Bachelor Degree (B.Sc. / S1 equivalent)
+  - 🎓 Master Degree (M.Sc. / S2 equivalent)
+  - 🎓 Doctoral Degree (Ph.D. / DBA / Ed.D.)
+  - 🏅 Honorary Award (Dr.Hc. / Prof.Hc.)
+  - 📜 Professional Certificate (Strategic Leadership, Global Business, etc.)
 
-Each program card contains:
-- Degree category
-- Degree name
-- One-sentence description
-- Fee amount
-- View Details button (links to detail page)
-- Ask via WhatsApp button
+Each qualification card contains:
+- Qualification emoji icon
+- Qualification name
+- One-sentence tagline
+- Consult via WhatsApp button
+- Link to detail page
+
+No fees displayed publicly.
 
 #### How It Works
 Steps:
-1. Submit Your CV — detailed Curriculum Vitae outlining professional experience
-2. Choose Your Degree — specific degree aligned with area of competence
-3. Complete Payment — proof of completed payment
+1. Initial Consultation — discuss your educational goals and professional background
+2. Document Review — review your papers, certificates, and work history
+3. Eligibility Check — verify your qualifications for your chosen program
+4. Program Recommendation — find the program that best matches your profile
+5. Application Support — guide you through forms and requirements
+6. Ongoing Assistance — track progress and help when needed
+7. Degree Issuance & Verification — diploma issued by accredited partner institution
 
 Display:
 - Numbered steps with icons
@@ -181,16 +183,15 @@ Requirements:
 Content:
 - RPL-Based Conferral — degrees based on existing experience
 - Accredited Partners — universities with national/international accreditation
-- Transparent Fees — clear upfront pricing
-- Simple Process — just 3 steps
+- Transparent Process — clear process without hidden surprises
 - Personal Consultation — dedicated advisor
-- Wide Degree Selection — bachelor's to honorary degrees
+- Flexible Qualification Paths — bachelor's to honorary degrees and certificates
 
 #### Frequently Asked Questions
 Questions:
 - What is Recognition of Prior Learning (RPL)?
 - What are the requirements to apply?
-- What degrees are available?
+- What qualifications are available?
 - How much does it cost?
 - Is International.degree a university?
 - Can the degree be recognized in Indonesia?
@@ -231,65 +232,39 @@ Content:
 
 #### Page Header
 Content:
-- Programs title
-- Short introduction about RPL-based degree conferral
+- "What Qualification Are You Aiming For?" as title
+- Short introduction targeting professionals with experience but no degree
 - Consultation via WhatsApp button
 
-#### Degree Category Navigation
-Categories:
-- Nationally Accredited Degrees
-- Internationally Non Accredited Degrees
+#### Qualification List
+5 qualification types displayed as cards:
+- Icon, name, tagline
+- "Learn more" link to detail page
+- Direct WhatsApp CTA
+- No fees displayed
 
-Behavior:
-- Filter program list by category
-- Simple tab interface
+#### Qualification Detail
+Dedicated dynamic detail route per qualification type.
 
-#### Program List
-Each program card contains:
-- Program name
-- Institution name
-- Credential type
-- Study method (RPL Assessment)
-- Estimated assessment duration
-- Eligibility summary
-- Fee amount
-- View Details button
+Content:
+- Qualification name and icon
+- Tagline
+- Overview (2-3 paragraphs)
+- Who is this for?
+- Key benefits (feature list with checkmarks)
+- Important note (disclosure)
 - Ask via WhatsApp button
 
-#### Program Detail
-Dedicated dynamic detail route per program.
+No fees, no technical tables, no institution details.
 
-Required content:
-- Program name
-- Program overview (RPL-based conferral explanation)
-- Suitable applicants
-- Credential type
-- Issuing institution
-- Study method (RPL Assessment)
-- Estimated assessment duration
-- Eligibility (30+, SLTA, established competence)
-- Required documents (CV, degree choice, payment proof)
-- Assessment summary
-- Assessment method
-- Conferral requirements
-- Fee information (with registration fee)
-- Accreditation information
-- Important disclosure
-- Ask via WhatsApp button
-
-#### Program WhatsApp Message
+#### Qualification WhatsApp Message
 Suggested template:
 
-> Hello International.degree, I would like to ask about the [Program Name] from [Institution Name]. Please provide more information about eligibility, requirements, and fees.
-
-#### Empty State
-Content:
-- No programs currently available in this category
-- Contact advisor via WhatsApp
+> Hello International.degree, I'm interested in the [Qualification Name] pathway. I have professional experience and would like to know more about how to qualify.
 
 #### Final CTA
 Content:
-- Need help choosing a degree?
+- Not sure which path fits you?
 - Consultation via WhatsApp button
 
 ---
@@ -305,7 +280,7 @@ Content:
 #### Our Story
 Content:
 - Service platform for RPL-based higher degree conferral
-- Target applicants (30+, SLTA, established competence)
+- Target applicants (30+, SLTA, established competence, or current college attendees)
 - Partnership with nationally/internationally accredited universities
 
 #### Our Role
@@ -319,9 +294,13 @@ Content:
 
 #### How It Works (Process)
 Steps:
-1. Submit Your CV
-2. Choose Your Degree
-3. Complete Payment
+1. Initial Consultation
+2. Document Review
+3. Eligibility Check
+4. Program Recommendation
+5. Application Support
+6. Ongoing Assistance
+7. Degree Issuance & Verification
 
 #### Partner Institution Information
 Content:
@@ -368,7 +347,7 @@ Questions:
 - How do I verify an institution?
 - Is admission guaranteed?
 - What is the difference between nationally accredited and internationally non-accredited degrees?
-- Can fees be refunded?
+- Are fees refundable?
 - How do I start the process?
 
 #### Final CTA
@@ -388,18 +367,15 @@ All primary CTA buttons open WhatsApp.
 - Must support international phone number format
 
 ### General Message Template
-> Hello International.degree, I would like to consult about the available degree programs based on RPL.
+> Hello International.degree, I would like to consult about a degree program based on my professional experience and qualifications.
 
 ### Contextual Message Templates
 
 #### Home
 > Hello International.degree, I would like to consult about a degree program based on my professional experience and qualifications.
 
-#### Program Category
-> Hello International.degree, I would like to learn more about the [Degree Category].
-
-#### Program Detail
-> Hello International.degree, I would like to ask about [Program Name] from [Institution Name].
+#### Qualification
+> Hello International.degree, I'm interested in the [Qualification Name] pathway. I have professional experience and would like to know more about how to qualify.
 
 #### Verification
 > Hello International.degree, I need assistance verifying an institution or credential.
@@ -428,22 +404,15 @@ All primary CTA buttons open WhatsApp.
 - Accreditation information (national/international)
 - Partnership description for RPL-based degree conferral
 
-### Required Degree Program Content
-- Program name
-- Degree category (Nationally Accredited / Internationally Non-Accredited)
-- Institution
-- Credential type
-- Study method (RPL Assessment)
-- Assessment duration
-- Eligibility (30+, SLTA, established competence)
-- Required documents (CV, degree choice, payment proof)
-- Assessment summary
-- Assessment method
-- Conferral requirements
-- Fee (fixed USD amount)
-- Registration fee (USD 100)
-- Accreditation information
-- Disclosure
+### Required Qualification Content
+- Qualification name (with emoji icon)
+- Tagline (one sentence)
+- Overview (2-3 paragraphs explaining the pathway)
+- Suitable for (target audience description)
+- Key benefits (list of features)
+- Disclosure (important legal note)
+
+No fees displayed publicly.
 
 ---
 
@@ -502,12 +471,11 @@ Body:
 - Footer navigation
 - Active page state
 
-### Degree Program Management
+### Qualification Management
 Recommended:
-- Programs loaded from data files (TypeScript)
-- Programs can be published or unpublished
-- Programs can be assigned to categories
-- Programs can be reordered
+- Qualification types loaded from data files (TypeScript)
+- Each qualification can be published or unpublished
+- Qualifications can be reordered
 
 ### Institution Management
 Recommended:
@@ -536,7 +504,7 @@ Each page must support:
 - Structured headings
 - Index/no-index option
 
-Program detail must support:
+Qualification detail must support:
 - Unique URL
 - Unique title
 - Unique description
@@ -563,7 +531,7 @@ Program detail must support:
 ### Reliability
 - WhatsApp links must have fallback behavior
 - Broken institution links should be reviewed regularly
-- Program publication must support draft status
+- Qualification publication must support draft status
 
 ### Browser Support
 - Latest Chrome
@@ -576,23 +544,7 @@ Program detail must support:
 
 ## 11. Fee Structure
 
-### Nationally Accredited Degrees
-| Level | Fee (USD) |
-|---|---|
-| Bachelor's Degree (S1) | 2,000 |
-| Master's Degree (S2) | 3,000 |
-| Doctoral Degree (S3) | 6,000 |
-
-### Internationally Non-Accredited Degrees
-| Level | Fee (USD) |
-|---|---|
-| B.Sc. | 200 |
-| M.Sc. | 400 |
-| Dr.Hc. (Doctor Honoris Causa) | 1,000 |
-| Prof.Hc. (Professor Honoris Causa) | 2,000 |
-
-### Registration Fee
-- USD 100 (applicable to all programs)
+Fees are not displayed publicly on the website. All fee information is disclosed during WhatsApp consultation with the academic advisor.
 
 ---
 
@@ -600,8 +552,8 @@ Program detail must support:
 
 ### Included
 - Home page
-- Programs page (Degrees)
-- Program detail pages
+- Programs page (Degrees) — qualification selector
+- Qualification detail pages (5 types)
 - About Us page
 - Responsive design
 - WhatsApp integration
@@ -610,7 +562,7 @@ Program detail must support:
 - Academic disclosure
 - Legal information
 - Basic SEO
-- Fixed fee display on cards and detail pages
+- Sitemap and robots.txt
 
 ### Not Included
 - User registration
@@ -624,6 +576,7 @@ Program detail must support:
 - Live chat
 - Course delivery
 - Student learning system
+- Public fee display
 
 ---
 
@@ -635,7 +588,7 @@ Primary:
 - Degree inquiry conversion
 
 Secondary:
-- Degree detail views
+- Qualification detail views
 - Partner institution link clicks
 - Average time on site
 - FAQ interactions
@@ -643,7 +596,7 @@ Secondary:
 
 Suggested initial targets:
 - WhatsApp CTA click rate: 5% or higher
-- Degree detail to WhatsApp conversion: 10% or higher
+- Qualification detail to WhatsApp conversion: 10% or higher
 - Mobile page load under 3 seconds
 - Bounce rate below 60%
 
@@ -656,15 +609,15 @@ Suggested initial targets:
 - Partner logos are visible
 - WhatsApp buttons use the correct message
 - FAQ works on desktop and mobile
-- Fee amounts are displayed correctly
+- 5 qualification types are displayed correctly
 - Main content is readable without zooming
 
 ### Programs
-- Users can browse degree categories
-- Users can open degree details
-- Degree information is complete including fees
-- WhatsApp message includes program context
-- Fee is displayed correctly formatted (e.g., USD 2,000)
+- Users can browse 5 qualification types
+- Users can open qualification details
+- Each qualification shows overview, suitability, features, disclosure
+- WhatsApp message includes qualification context
+- No fees are displayed publicly
 
 ### About Us
 - Company role is clearly stated (service platform, not degree-granting)
@@ -679,9 +632,9 @@ Suggested initial targets:
 - No broken links
 - No false guarantee language
 - No unapproved institution logos
-- SEO metadata is configured for RPL model
-- Registration fee of USD 100 is mentioned
+- SEO metadata is configured for new positioning
 - Age requirement (30+) is clearly communicated
+- Fees are disclosed only via WhatsApp, not on the site
 
 ---
 

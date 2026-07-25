@@ -21,20 +21,26 @@ const inter = Inter({
 export async function generateMetadata() {
   const cookieStore = await cookies();
   const lang = (cookieStore.get("lang")?.value as Lang) || "en";
-  const t = translations[lang].home;
+  const t = translations[lang].seo.home;
 
   return {
+    metadataBase: new URL("https://international.degree"),
     title: {
-      default: "International.degree — Higher Degree Conferral Through Recognition of Prior Learning (RPL)",
+      default: t.title,
       template: "%s | International.degree",
     },
-    description: "International.degree provides higher degree conferral based on the Recognition of Prior Learning (RPL) framework. Nationally accredited degrees (S1, S2, S3) and internationally non-accredited degrees (B.Sc., M.Sc., Dr.Hc., Prof.Hc.) for professionals aged 30+ with SLTA minimum qualification.",
+    description: t.description,
     openGraph: {
-      title: "International.degree — Degree Conferral Through RPL",
-      description: "Higher degree conferral based on Recognition of Prior Learning (RPL). Nationally and internationally accredited degree pathways for experienced professionals aged 30+.",
+      title: t.title,
+      description: t.description,
       type: "website",
       locale: lang === "id" ? "id_ID" : "en_US",
       siteName: "International.degree",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t.title,
+      description: t.description,
     },
   };
 }
