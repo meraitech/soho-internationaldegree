@@ -55,9 +55,9 @@ export default async function HomePage() {
         <SectionHeading
           title={t.trustTitle}
           description={t.trustDescription}
-          link={{ href: "#", label: t.trustLinkLabel }}
+          link={{ href: "/about", label: t.trustLinkLabel }}
         />
-        <MyCard items={t.trustItems.map((item: { title: string; description: string }) => ({ title: item.title, description: item.description }))} />
+        <MyCard items={t.trustItems.map((item: { title: string; description: string }, i: number) => ({ title: item.title, description: item.description, imageSrc: `/img/why${i + 1}.jpg` }))} />
       </MyContainer>
 
       {/* About International.degree */}
