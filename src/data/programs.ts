@@ -22,6 +22,7 @@ export interface Program {
   disclosure: { en: string; id: string };
   isPublished: boolean;
   displayOrder: number;
+  whatsappMessage?: { en: string; id: string };
 }
 
 export const programCategories = [
@@ -84,28 +85,32 @@ export const programs: Program[] = [
   },
   {
     slug: "doctoral-degree",
-    category: "Nationally Accredited Degrees",
-    name: { en: "Doctoral Degree (S3)", id: "Gelar Doktor (S3)" },
-    description: { en: "Nationally accredited doctoral degree conferred through Recognition of Prior Learning (RPL). Available disciplines include DBA, Ed.D., Ph.D., and other relevant fields.", id: "Gelar doktor terakreditasi nasional yang diberikan melalui Recognition of Prior Learning (RPL). Disiplin yang tersedia meliputi DBA, Ed.D., Ph.D., dan bidang relevan lainnya." },
+    category: "Internationally Non Accredited Degrees",
+    name: { en: "Doctoral Degree Pathway", id: "Jalur Doktor" },
+    description: { en: "Earn a professional/academic doctorate through Recognition of Prior Learning (RPL) — IAO-accredited, awarded by Hafiz Indonesia Emas Academy.", id: "Dapatkan doktor profesional/akademik melalui Recognition of Prior Learning (RPL) — terakreditasi IAO, diberikan oleh Hafiz Indonesia Emas Academy." },
     icon: "FaFlask",
-    institutionSlug: "sample-university",
-    institutionName: institution,
-    credentialType: { en: "Doctoral Degree (S3)", id: "Gelar Doktor (S3)" },
-    studyMethod: { en: "Recognition of Prior Learning (RPL) Assessment", id: "Penilaian Recognition of Prior Learning (RPL)" },
-    duration: { en: "Assessment completed within 4–8 weeks", id: "Penilaian selesai dalam 4–8 minggu" },
-    eligibility: { en: "Minimum 30 years of age, Senior High School (SLTA) qualification, and established competence at the expert level in the relevant field.", id: "Minimal usia 30 tahun, kualifikasi SLTA, dan kompetensi yang mapan di tingkat ahli di bidang terkait." },
-    overview: { en: "This nationally accredited doctoral degree is conferred based on the Recognition of Prior Learning (RPL) framework. Your extensive professional experience and expert-level competencies are evaluated against doctoral academic standards to award the appropriate degree title (DBA, Ed.D., Ph.D., or other relevant disciplines).", id: "Gelar doktor terakreditasi nasional ini diberikan berdasarkan kerangka Recognition of Prior Learning (RPL). Pengalaman profesional ekstensif dan kompetensi tingkat ahli Anda dievaluasi terhadap standar akademik doktoral untuk memberikan gelar yang sesuai (DBA, Ed.D., Ph.D., atau disiplin relevan lainnya)." },
-    suitableApplicants: { en: "Expert-level professionals aged 30+ with a minimum of Senior High School (SLTA) education who have established outstanding competence in their field and seek the highest level of academic recognition.", id: "Profesional tingkat ahli berusia 30+ dengan pendidikan minimal SLTA yang memiliki kompetensi luar biasa yang mapan di bidangnya dan mencari pengakuan akademik tingkat tertinggi." },
-    requiredDocuments: { en: "1. Detailed Curriculum Vitae (CV)\n2. Specific degree choice aligned with your area of competence\n3. Proof of completed payment", id: "1. Curriculum Vitae (CV) terperinci\n2. Pilihan gelar spesifik yang sesuai dengan bidang kompetensi Anda\n3. Bukti pembayaran lunas" },
-    curriculumSummary: { en: "Recognition of Prior Learning (RPL) evaluation — expert-level competency mapping, comprehensive evidence portfolio review, and doctoral academic credit assessment.", id: "Evaluasi Recognition of Prior Learning (RPL) — pemetaan kompetensi tingkat ahli, tinjauan portofolio bukti komprehensif, dan penilaian kredit akademik doktoral." },
-    assessmentMethod: { en: "Portfolio-based expert competency assessment and prior learning evaluation by the academic committee.", id: "Penilaian kompetensi ahli berbasis portofolio dan evaluasi pembelajaran sebelumnya oleh komite akademik." },
-    graduationRequirements: { en: "Successful completion of the RPL assessment and verification of submitted credentials.", id: "Penyelesaian penilaian RPL yang berhasil dan verifikasi kredensial yang diajukan." },
-    fee: 6000,
-    feeInformation: { en: "USD 6,000 + USD 100 registration fee", id: "USD 6.000 + biaya pendaftaran USD 100" },
-    accreditationInformation: { en: "Nationally accredited degree awarded by an accredited Indonesian university partner.", id: "Gelar terakreditasi nasional yang diberikan oleh mitra universitas terakreditasi Indonesia." },
-    disclosure: { en: "This degree is conferred based on Recognition of Prior Learning (RPL). Admission and degree conferral decisions are made by the issuing university. International.degree is a service platform, not a degree-granting institution.", id: "Gelar ini diberikan berdasarkan Recognition of Prior Learning (RPL). Keputusan penerimaan dan pemberian gelar dibuat oleh universitas penerbit. International.degree adalah platform layanan, bukan institusi pemberi gelar." },
+    institutionSlug: "hafiz-indonesia-emas-academy",
+    institutionName: "Hafiz Indonesia Emas Academy",
+    credentialType: { en: "Earned Doctorate (Ph.D. / DBA / Ed.D.)", id: "Doktor Formal (Ph.D. / DBA / Ed.D.)" },
+    studyMethod: { en: "Recognition of Prior Learning (RPL) — Professional Portfolio Assessment", id: "Penilaian Recognition of Prior Learning (RPL) — Portofolio Profesional" },
+    duration: { en: "Self-paced; assessment completed within 4–8 weeks", id: "Mandiri; penilaian selesai dalam 4–8 minggu" },
+    eligibility: { en: "Minimum 30 years old; hold a Master's degree OR exceptional senior leadership/professional standing; 8+ years of advanced practice, leadership, or notable contributions in your field.", id: "Minimal 30 tahun; memiliki gelar Master ATAU jabatan kepemimpinan/profesional senior yang luar biasa; 8+ tahun praktik lanjutan, kepemimpinan, atau kontribusi signifikan di bidang Anda." },
+    overview: { en: "This is the highest formal earned qualification — a flexible route to get an earned professional/academic doctorate using Recognition of Prior Learning (RPL). We validate your advanced expertise, leadership impact, and proven mastery instead of long campus study or a traditional full dissertation. Available titles include Ph.D. (Doctor of Philosophy), DBA (Doctor of Business Administration), Ed.D. (Doctor of Education), and other practice-focused doctoral designations.\n\n⚠️ Important: This is an earned doctorate (Ph.D., DBA, Ed.D.) — NOT a Doctor Honoris Causa (Dr.Hc.) or Professor Honoris Causa (Prof.Hc.). An earned doctorate is the highest formal academic/professional qualification, based on advanced competence, verified mastery, and a professional portfolio. Dr.Hc./Prof.Hc. are honorary titles based on symbolic recognition of lifetime service and carry different standing.", id: "Ini adalah kualifikasi formal tertinggi — jalur fleksibel untuk mendapatkan doktor profesional/akademik melalui Recognition of Prior Learning (RPL). Kami memvalidasi keahlian lanjutan, dampak kepemimpinan, dan penguasaan yang terbukti tanpa perlu studi kampus panjang atau disertasi tradisional. Gelar yang tersedia meliputi Ph.D. (Doctor of Philosophy), DBA (Doctor of Business Administration), Ed.D. (Doctor of Education), dan gelar doktor berbasis praktik lainnya.\n\n⚠️ Penting: Ini adalah doktor formal (Ph.D., DBA, Ed.D.) — BUKAN Doctor Honoris Causa (Dr.Hc.) atau Professor Honoris Causa (Prof.Hc.). Doktor formal adalah kualifikasi akademik/profesional formal tertinggi, berdasarkan kompetensi lanjutan, penguasaan yang terverifikasi, dan portofolio profesional. Dr.Hc./Prof.Hc. adalah gelar kehormatan berdasarkan pengakuan simbolis atas pengabdian seumur hidup dan memiliki status yang berbeda." },
+    suitableApplicants: { en: "Senior leaders, executives, and expert practitioners aged 30+ who hold a Master's degree or have exceptional professional standing, with 8+ years of advanced practice — ready for the highest formal credential without pausing their work.", id: "Pemimpin senior, eksekutif, dan praktisi ahli berusia 30+ yang memiliki gelar Master atau memiliki status profesional luar biasa, dengan 8+ tahun praktik lanjutan — siap untuk kredensial formal tertinggi tanpa menghentikan pekerjaan mereka." },
+    requiredDocuments: { en: "1. Detailed Curriculum Vitae (CV)\n2. Highest diploma\n3. Key professional achievements and portfolio", id: "1. Curriculum Vitae (CV) terperinci\n2. Ijazah tertinggi\n3. Prestasi profesional utama dan portofolio" },
+    curriculumSummary: { en: "1. Advanced Profile Review — Verify highest qualifications, major projects, leadership impact.\n2. Doctoral-Level RPL — Match your experience against IAO international doctoral standards.\n3. Self-Paced Deepening — Access tailored advanced materials from home.\n4. Professional Portfolio — Submit your key work plus reflective summary — no traditional dissertation required.\n5. Award — Receive your fully accredited earned doctorate, valid for life.", id: "1. Tinjauan Profil Lanjutan — Verifikasi kualifikasi tertinggi, proyek utama, dampak kepemimpinan.\n2. RPL Tingkat Doktoral — Cocokkan pengalaman Anda dengan standar doktoral internasional IAO.\n3. Pendalaman Mandiri — Akses materi lanjutan yang disesuaikan dari rumah.\n4. Portofolio Profesional — Kirimkan karya utama Anda plus ringkasan reflektif — tanpa disertasi tradisional.\n5. Penghargaan — Terima doktor formal terakreditasi penuh Anda, berlaku seumur hidup." },
+    assessmentMethod: { en: "Advanced profile review, doctoral-level RPL assessment, and professional portfolio evaluation by the IAO-accredited committee.", id: "Tinjauan profil lanjutan, penilaian RPL tingkat doktoral, dan evaluasi portofolio profesional oleh komite terakreditasi IAO." },
+    graduationRequirements: { en: "Successful completion of the advanced profile review, doctoral-level RPL assessment, and professional portfolio submission.", id: "Penyelesaian tinjauan profil lanjutan, penilaian RPL tingkat doktoral, dan pengiriman portofolio profesional yang berhasil." },
+    fee: 3500,
+    feeInformation: { en: "USD 3,500 + USD 100 registration fee", id: "USD 3.500 + biaya pendaftaran USD 100" },
+    accreditationInformation: { en: "Accredited by the International Accreditation Organization (IAO) — the world's leading international accreditation body.", id: "Diakreditasi oleh International Accreditation Organization (IAO) — badan akreditasi internasional terkemuka di dunia." },
+    disclosure: { en: "This is an earned doctorate (Ph.D., DBA, Ed.D.), not an honorary title (Dr.Hc./Prof.Hc.). Admission and degree conferral decisions are made by Hafiz Indonesia Emas Academy under IAO accreditation standards. International.degree is a service platform, not a degree-granting institution.", id: "Ini adalah doktor formal (Ph.D., DBA, Ed.D.), bukan gelar kehormatan (Dr.Hc./Prof.Hc.). Keputusan penerimaan dan pemberian gelar dibuat oleh Hafiz Indonesia Emas Academy di bawah standar akreditasi IAO. International.degree adalah platform layanan, bukan institusi pemberi gelar." },
     isPublished: true,
     displayOrder: 3,
+    whatsappMessage: {
+      en: "Hello International.degree, I would like to learn more about the Doctoral Degree Pathway.",
+      id: "Halo International.degree, saya ingin mengetahui lebih lanjut tentang Jalur Doktor.",
+    },
   },
   {
     slug: "international-bachelor",

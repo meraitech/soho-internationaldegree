@@ -41,7 +41,7 @@ export default async function ProgramDetailPage({
     notFound();
   }
 
-  const whatsappMessage = `Hello International.degree, I would like to ask about ${program.name[lang]} from ${program.institutionName}. Please provide more information about eligibility, duration, requirements, and fees.`;
+  const whatsappMessage = program.whatsappMessage?.[lang] || `Hello International.degree, I would like to ask about ${program.name[lang]} from ${program.institutionName}. Please provide more information about eligibility, duration, requirements, and fees.`;
 
   return (
     <main>

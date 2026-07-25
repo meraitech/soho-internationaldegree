@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { settings, type Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
+import Link from "next/link";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -61,15 +62,20 @@ export default function Footer1({ lang }: { lang: Lang }) {
               className="flex flex-col justify-between space-y-6 mb-6 lg:mb-0"
             >
               {/* Logo */}
-              <div className="flex items-center gap-2">
-                <div className="flex h-8 w-8 items-center justify-center bg-surface">
-                  <span className="text-lg font-bold text-dark">
-                    ID
-                  </span>
+              <div className="flex flex-col gap-4">
+                <div className="flex items-center gap-2">
+                  <div className="flex h-8 w-8 items-center justify-center bg-surface">
+                    <span className="text-lg font-bold text-dark">
+                      ID
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-medium">
+                    international.degree
+                  </h3>
                 </div>
-                <h3 className="text-lg font-medium">
-                  international.degree
-                </h3>
+                <Link href="https://www.iao.org/Indonesia-WestJava/Yayasan-Hafiz-Indonesia-Emas" className="bg-white w-18 p-1 rounded-full aspect-square">
+                  <img src="/assets/seals/iao.png" alt="IAO Seals" className="w-full h-full object-contain" />
+                </Link>
               </div>
 
               {/* Small Text */}

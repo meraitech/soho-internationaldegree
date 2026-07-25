@@ -65,7 +65,7 @@ export function Hero4({ buttonLabel, headline, whatsappMessage }: { buttonLabel:
                         transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
                         className="flex flex-col space-y-3 sm:space-y-4"
                     >
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal leading-[1.1] md:whitespace-nowrap">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal leading-[1.1]">
                             {headline}
                         </h1>
                     </motion.div>
