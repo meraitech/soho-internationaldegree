@@ -7,12 +7,13 @@ This version has breaking changes — APIs, conventions, and file structure may 
 <!-- BEGIN:product-positioning -->
 ## SEO & Product Positioning (Jul 2026)
 
-**Target market:** Professionals who already have college experience (kuliah tapi belum lulus) or professional experience with no formal degree recognition.
+**Target market:** Senior professionals, executives, and business owners who are already successful and financially established but lack formal degree recognition. NOT college dropouts — this is for people who have already built a career and need the credential to match their professional standing.
 
 **Key messaging:**
-- Udah kuliah? Selesaikan gelarmu cepat & biaya terjangkau
+- Profesional senior? Dapatkan gelar yang layak untuk karier Anda — cepat, berkualitas & terakreditasi
 - Diakui: Akreditasi (A) nasional & internasional (EAO)
-- Berdasarkan pengalaman kerja, bukan belajar dari awal
+- Berdasarkan pengalaman kerja, bukan belajar di kelas
+- Tidak punya waktu kuliah? Kami paham — proses cepat tanpa mengganggu karier
 - Klik WA untuk informasi
 
 **5 Qualification Paths:**
@@ -25,6 +26,6 @@ This version has breaking changes — APIs, conventions, and file structure may 
 **Key rules:**
 - NO prices displayed publicly — fees disclosed via WhatsApp only
 - All CTAs → WhatsApp
-- Copy pillars: "udah kuliah", "cepat & murah", "akreditasi A & EAO", "klik WA"
-- Target: market sudah matang (experience) tapi belum ada pengakuan (degree)
+- Copy pillars: "profesional senior", "tanpa kuliah", "akreditasi A & EAO", "cepat & berkualitas", "klik WA"
+- Target: market sudah matang (experience + financial means) tapi belum ada pengakuan (degree)
 <!-- END:product-positioning -->

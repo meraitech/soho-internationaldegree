@@ -9,22 +9,23 @@ International.degree
 Degree conferral service platform based on Recognition of Prior Learning (RPL)
 
 ### Primary Goal
-Help experienced professionals who already have college experience or professional credentials obtain formal academic recognition — quickly, affordably, and through accredited pathways.
+Help senior professionals and executives who are already successful in their careers obtain formal academic recognition for their professional experience — quickly, affordably, and through nationally accredited pathways.
 
 ### Target Users
-- Professionals who have attended college (completed or incomplete) but have no formal degree
-- Experienced professionals aged 30+ with established competence in their field
-- Individuals seeking fast, affordable, accredited qualification pathways
-- Business owners, senior professionals, executives, organization leaders
-- Individuals seeking honorary recognition for lifetime achievement
+- Senior professionals aged 30+ with significant career experience but no formal degree
+- Business owners, executives, and organization leaders who are financially established but lack academic credentials
+- Distinguished individuals seeking honorary recognition for lifetime achievement
+- Busy professionals who cannot pause their career for traditional study
+- Professionals who need a degree that matches their professional standing — fast, quality, and recognized
 
 ### Main Value Proposition
-- Already in college? Complete your degree fast, affordably, and accredited (A & EAO)
-- Professional experience deserves formal academic recognition — no need to start over
+- Senior professional? Get the degree your career deserves — fast, quality & nationally accredited (A & EAO)
+- Your professional experience IS the degree — no classroom time required
 - 5 qualification paths: bachelor, master, doctoral, honorary, professional certificate
 - Nationally accredited (A) and internationally recognized (EAO) pathways
+- Designed for busy, financially established professionals — no time to waste, no need to study
 - WhatsApp-based consultation throughout the process
-- Market is mature (lots of experience) but lacks formal recognition (degree)
+- Market is mature (lots of experience, financial means) but lacks formal recognition (degree)
 
 ---
 
