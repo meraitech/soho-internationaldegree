@@ -14,6 +14,7 @@ import MyPadding from "@/components/ui/my-padding";
 import CertificateItems from "@/components/Certificate";
 import { certificates } from "@/data/certificates";
 import QualificationCard from "@/components/QualificationCard";
+import JsonLd from "@/components/JsonLd";
 
 import { Hero4 } from "@/components/Hero4";
 import Faq4 from "@/components/faq-4";
@@ -133,6 +134,21 @@ export default async function HomePage() {
 
       {/* Final CTA */}
       <CTA13 lang={lang} />
+
+      <JsonLd
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: homeFaqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question[lang],
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer[lang],
+            },
+          })),
+        }}
+      />
     </main>
   );
 }

@@ -9,6 +9,7 @@ import MyContainer from "@/components/ui/my-container";
 import MyCard from "@/components/ui/my-card";
 import LegalModal from "@/components/LegalModal";
 import { FaArrowRightLong } from "react-icons/fa6";
+import JsonLd from "@/components/JsonLd";
 import { Features1 } from "@/components/features-1";
 import Faq4 from "@/components/faq-4";
 import CTA13 from "@/components/cta-13";
@@ -143,6 +144,21 @@ export default async function AboutPage() {
 
       {/* Final CTA */}
       <CTA13 lang={lang} />
+
+      <JsonLd
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: aboutFaqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question[lang],
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer[lang],
+            },
+          })),
+        }}
+      />
     </main>
   );
 }
