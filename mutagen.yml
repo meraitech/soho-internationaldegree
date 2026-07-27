@@ -1,0 +1,37 @@
+# mutagen project start
+# mutagen project list
+# mutagen project terminate
+
+sync:
+  defaults:
+    mode: one-way-replica
+    ignore:
+      vcs: true
+      paths:
+        - node_modules
+        - "**/node_modules"
+        - .next
+        - "**/.next"
+        - dist
+        - "**/dist"
+        - build
+        - "**/build"
+        - target
+        - "**/target"
+        - .turbo
+        - "**/.turbo"
+        - coverage
+        - "**/coverage"
+        - "*.log"
+        - ".DS_Store"
+        - ".env"
+        - "**/.env"
+        - graphify-out
+    permissions:
+      defaultFileMode: 0644
+      defaultDirectoryMode: 0755
+
+  live2dev:
+    alpha: /Users/ranaufal/MyWork/Business/Orphic/Merai/software-house/internationaldegree/services/soho-internationaldegree
+    beta: ifal@ubuntu-srv01:/home/ifal/workspace/clients/soho-internationaldegree
+    flushOnCreate: true
