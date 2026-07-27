@@ -38,30 +38,30 @@ export default function LoginPage() {
   };
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-background px-4">
+    <main className="min-h-screen flex items-center justify-center bg-surface px-4">
       <div className="w-full max-w-lg mx-auto">
         <div className="text-center mb-8">
-          <Link href="/" className="font-heading text-2xl text-foreground">
+          <Link href="/" className="font-heading text-2xl text-background">
             International.degree
           </Link>
         </div>
 
-        <div className="bg-surface rounded-sm p-8 md:p-12 shadow-lg">
-          <div className="flex flex-col items-center mb-8">
-            <div className="w-14 h-14 bg-dark rounded-full flex items-center justify-center mb-4">
-              <FaLock className="text-warm-white text-xl" />
+        <div className="bg-background">
+          <div className="flex flex-col items-center px-8 md:px-12 pt-10 md:pt-12 pb-8 md:pb-10">
+            <div className="w-12 h-12 bg-dark text-foreground flex items-center justify-center mb-4">
+              <FaLock className="text-lg" />
             </div>
-            <h1 className="font-heading text-3xl md:text-4xl text-background">
+            <h1 className="font-heading text-3xl md:text-4xl text-foreground">
               Login
             </h1>
-            <p className="text-charcoal/60 mt-1">
+            <p className="text-description mt-1">
               Sign in to your account
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-5">
+          <form className="px-8 md:px-12 pb-10 md:pb-12 space-y-5">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-background mb-1.5">
+              <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1.5">
                 Email
               </label>
               <input
@@ -71,13 +71,13 @@ export default function LoginPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 autoComplete="email"
-                className="w-full px-4 py-3 bg-warm-white border border-charcoal/30 text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-maroon focus:border-transparent transition-colors rounded-sm"
+                className="w-full px-4 py-3 bg-foreground text-background placeholder:text-description border border-transparent focus:outline-none focus:ring-2 focus:ring-description transition-colors"
                 placeholder="you@example.com"
               />
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-background mb-1.5">
+              <label htmlFor="password" className="block text-sm font-medium text-foreground mb-1.5">
                 Password
               </label>
               <input
@@ -87,7 +87,7 @@ export default function LoginPage() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 autoComplete="current-password"
-                className="w-full px-4 py-3 bg-warm-white border border-charcoal/30 text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-maroon focus:border-transparent transition-colors rounded-sm"
+                className="w-full px-4 py-3 bg-foreground text-background placeholder:text-description border border-transparent focus:outline-none focus:ring-2 focus:ring-description transition-colors"
                 placeholder="••••••••"
               />
             </div>
@@ -99,7 +99,7 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-dark text-white px-6 py-3.5 font-medium transition-colors hover:bg-charcoal disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-maroon rounded-sm"
+              className="w-full bg-dark text-foreground px-6 py-3.5 font-medium transition-colors hover:bg-sekeleton disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-description"
             >
               {loading ? "Signing in..." : "Sign In"}
             </button>
