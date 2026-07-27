@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import type { Lang } from "@/data/settings";
 import { translations } from "@/data/translations";
 import LanguageSwitcher from "./LanguageSwitcher";
-import WhatsAppButton from "./WhatsAppButton";
 
 interface HeaderProps {
   lang: Lang;
@@ -16,7 +15,6 @@ export default function Header({ lang }: HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const t = translations[lang].nav;
-  const homeT = translations[lang].home;
 
   const [scrolled, setScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
@@ -99,12 +97,12 @@ export default function Header({ lang }: HeaderProps) {
             <LanguageSwitcher
               className="text-lg h-16 md:h-20 bg-dark text-white px-6 py-3 lg:px-8 lg:py-4 border-r border-white/20"
               currentLang={lang} />
-            <WhatsAppButton
-              label={t.consult}
-              variant="secondary"
-              className="h-16 md:h-20 text-lg"
-              message={homeT.whatsappConsult}
-            />
+            <Link
+              href="/login"
+              className="h-16 md:h-20 bg-dark text-white px-6 py-3 lg:px-8 lg:py-4 text-lg font-medium inline-flex items-center justify-center transition-colors hover:bg-charcoal focus-visible:outline-none"
+            >
+              {t.login}
+            </Link>
           </nav>
 
           <button
@@ -153,12 +151,13 @@ export default function Header({ lang }: HeaderProps) {
               <LanguageSwitcher currentLang={lang} />
             </div>
 
-            <WhatsAppButton
-              label={t.consult}
-              variant="secondary"
-              className="h-16 md:h-20"
-              message={homeT.whatsappConsult}
-            />
+            <Link
+              href="/login"
+              onClick={() => setMobileOpen(false)}
+              className="block w-full text-center bg-dark text-white px-6 py-3 text-lg font-medium transition-colors hover:bg-charcoal"
+            >
+              {t.login}
+            </Link>
           </div>
         </div>
       )}

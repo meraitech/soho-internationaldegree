@@ -5,6 +5,7 @@ export const translations = {
       programs: "Degrees",
       about: "About Us",
       consult: "Consult",
+      login: "Login",
     },
     home: {
       heroHeadline: "Senior Professional? Earn the Degree Your Career Deserves. Fast, Quality & Nationally Accredited.",
@@ -215,6 +216,7 @@ export const translations = {
       programs: "Gelar",
       about: "Tentang Kami",
       consult: "Konsultasi",
+      login: "Masuk",
     },
     home: {
       heroHeadline: "Profesional Senior? Dapatkan Gelar yang Layak untuk Karier Anda. Cepat, Berkualitas & Terakreditasi.",
