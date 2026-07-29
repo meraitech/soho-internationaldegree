@@ -29,7 +29,7 @@ export default function LoginPage() {
         throw new Error(data.message || "Invalid email or password");
       }
 
-      router.push("/admin");
+      router.push("/dashboard");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Invalid email or password");
     } finally {

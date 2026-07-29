@@ -3,6 +3,16 @@
   "plugin": [
     ".opencode/plugins/graphify.js",
     "@dietrichgebert/ponytail"
-
-  ]
+  ],
+  "mcp": {
+    "shadcn": {
+      "type": "local",
+      "command": [
+        "npx",
+        "shadcn@latest",
+        "mcp"
+      ],
+      "enabled": true
+    }
+  }
 }
