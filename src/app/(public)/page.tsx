@@ -19,7 +19,6 @@ import JsonLd from "@/components/JsonLd";
 import { Hero4 } from "@/components/Hero4";
 import Faq4 from "@/components/faq-4";
 import CTA13 from "@/components/cta-13";
-import { SocialProof9 } from "@/components/social-proof-9";
 import { Features1 } from "@/components/features-1";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -125,9 +124,6 @@ export default async function HomePage() {
         />
         <MyCard items={t.suitableItems.map((item: { title: string }, i: number) => ({ title: item.title, imageSrc: images.suitable[i].src }))} />
       </MyContainer>
-
-      {/* Partner Institutions */}
-      <SocialProof9 lang={lang} />
 
       {/* FAQ */}
       <Faq4 lang={lang} faqs={homeFaqs} />

@@ -101,7 +101,7 @@ export default function CTA13({ lang }: { lang: Lang }) {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-80px" }}
-          className="relative overflow-hidden border border-neutral-200"
+          className="relative overflow-hidden border border-neutral-800 bg-neutral-950"
         >
           <motion.div
             variants={field}
@@ -152,22 +152,22 @@ export default function CTA13({ lang }: { lang: Lang }) {
           >
             <motion.span
               variants={item}
-              className="inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-[0.2em] text-neutral-500 dark:text-neutral-400"
+              className="inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-[0.2em] text-neutral-400"
             >
-              <BsAsterisk className="h-4 w-4 text-neutral-900 dark:text-white" />
+              <BsAsterisk className="h-4 w-4 text-white" />
               International.degree
             </motion.span>
 
             <motion.h2
               variants={item}
-              className="mt-7 font-serif text-4xl leading-[1.08] tracking-tight text-neutral-950 sm:text-5xl md:text-6xl dark:text-white"
+              className="mt-7 font-serif text-4xl leading-[1.08] tracking-tight text-white sm:text-5xl md:text-6xl"
             >
               {t.finalCTA}
             </motion.h2>
 
             <motion.p
               variants={item}
-              className="mt-6 max-w-xl text-base leading-relaxed text-neutral-600 sm:text-lg dark:text-neutral-400"
+              className="mt-6 max-w-xl text-base leading-relaxed text-neutral-300 sm:text-lg"
             >
               {t.finalCTADescription}
             </motion.p>
@@ -177,7 +177,7 @@ export default function CTA13({ lang }: { lang: Lang }) {
                 href={`https://wa.me/${settings.whatsappNumber}?text=${encodeURIComponent("Hello International.degree, " + t.finalCTA.toLowerCase())}`}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                className="inline-flex w-full cursor-pointer items-center justify-center bg-neutral-950 px-8 py-3.5 text-sm font-medium text-white transition-colors hover:bg-neutral-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-950 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-100 sm:w-auto dark:bg-white dark:text-neutral-950 dark:hover:bg-neutral-200 dark:focus-visible:ring-white dark:focus-visible:ring-offset-neutral-900"
+                className="inline-flex w-full cursor-pointer items-center justify-center bg-white px-8 py-3.5 text-sm font-medium text-neutral-950 transition-colors hover:bg-neutral-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900 sm:w-auto"
               >
                 {t.heroCTA}
               </motion.a>

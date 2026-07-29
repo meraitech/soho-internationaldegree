@@ -8,7 +8,7 @@ export const translations = {
       login: "Login",
     },
     home: {
-      heroHeadline: "Senior Professional? Earn the Degree Your Career Deserves. Fast, Quality & Nationally Accredited.",
+      heroHeadline: "Senior Professional? Earn the Degree Your Career Deserves. Fast, Quality and Nationally Accredited.",
       heroDescription: "Turn your career success and experience into a degree recognized nationally (Accreditation A) and internationally (EAO). No need to sit in a classroom. Fast, quality, and affordable. Click WhatsApp for info.",
       heroCTA: "Info via WhatsApp",
       whatsappConsult: "Hello International.degree, I am a senior professional interested in earning a degree based on my career experience and qualifications.",
@@ -39,7 +39,7 @@ export const translations = {
         "Program Recommendation",
         "Application Support",
         "Ongoing Assistance",
-        "Degree Issuance & Verification",
+        "Degree Issuance and Verification",
       ],
       howItWorksDescriptions: [
         "We will discuss your educational goals and professional background.",
@@ -57,9 +57,7 @@ export const translations = {
         { title: "SLTA Minimum Qualification" },
         { title: "Established Competence" },
       ],
-      partnersTitle: "Partner Institutions",
-      partnersDescription: "We work with nationally and internationally accredited universities committed to recognizing professional experience through the RPL framework.",
-      partnersHeading: "Our University Partners",
+
       whyChooseTitle: "Why Choose International.degree",
       whyChooseList: [
         { title: "RPL-Based Recognition", description: "Your degree is based on your professional experience. No classroom time required." },
@@ -69,7 +67,7 @@ export const translations = {
         { title: "Personal Consultation", description: "A dedicated advisor guides you through every step of the process." },
         { title: "Affordable Excellence", description: "Quality degrees at a fraction of the cost. Real value for established professionals." },
       ],
-      certificateTitle: "Accreditations & Certifications",
+      certificateTitle: "Accreditations and Certifications",
       certificateDescription: "Our partner institutions hold international accreditation and certifications that reflect a commitment to global academic standards.",
       faqTitle: "Frequently Asked Questions",
       finalCTA: "Start Your Degree Journey Today",
@@ -77,16 +75,16 @@ export const translations = {
     },
     seo: {
       home: {
-        title: "Program RPL for Senior Professionals. Fast Degree, Accredited (A) & International (EAO)",
-        description: "Turn your professional experience into a nationally accredited (A) and internationally recognized (EAO) degree. RPL program for senior professionals and executives. Fast, affordable, no classroom time. Click WhatsApp.",
+        title: "RPL Degree for Senior Professionals – Fast, Accredited and International",
+        description: "Turn your professional experience into a nationally accredited degree. RPL program for senior professionals and executives. Fast, affordable, no classroom. Click WhatsApp.",
       },
       about: {
-        title: "About. RPL Degree Programs for Senior Professionals",
-        description: "We help senior professionals earn their degree through RPL. Nationally accredited (A) and internationally recognized (EAO). Designed for busy executives. Consult via WhatsApp.",
+        title: "About – RPL Degree Programs for Senior Professionals",
+        description: "We help senior professionals earn their degree through RPL. Nationally accredited (A) and internationally recognized (EAO). For busy executives. Consult via WhatsApp.",
       },
       programs: {
-        title: "RPL Degree Programs. Accredited (A) & International (EAO) for Professionals",
-        description: "Browse RPL degree programs for senior professionals. Fast completion, nationally accredited (A) and internationally recognized (EAO). Based on your career experience and expertise.",
+        title: "RPL Degree Programs – Accredited (A) and International (EAO)",
+        description: "Browse RPL degree programs for senior professionals. Fast, nationally accredited (A) and internationally recognized (EAO). Based on your career experience.",
       },
       programDetail: {
         titleSuffix: "RPL Program for Professionals | International.degree",
@@ -140,7 +138,7 @@ export const translations = {
         "Program Recommendation",
         "Application Support",
         "Ongoing Assistance",
-        "Degree Issuance & Verification",
+        "Degree Issuance and Verification",
       ],
       processDescriptions: [
         "We will discuss your educational goals and professional background.",
@@ -219,7 +217,7 @@ export const translations = {
       login: "Masuk",
     },
     home: {
-      heroHeadline: "Profesional Senior? Dapatkan Gelar yang Layak untuk Karier Anda. Cepat, Berkualitas & Terakreditasi.",
+      heroHeadline: "Profesional Senior? Dapatkan Gelar yang Layak untuk Karier Anda. Cepat, Berkualitas dan Terakreditasi.",
       heroDescription: "Konversi pengalaman kerja dan kesuksesan karier Anda menjadi gelar yang diakui nasional (Akreditasi A) dan internasional (EAO). Tanpa harus duduk di kelas lagi. Cepat, berkualitas, biaya terjangkau. Klik WA untuk informasi.",
       heroCTA: "Info via WhatsApp",
       whatsappConsult: "Halo International.degree, saya seorang profesional senior yang tertarik mendapatkan gelar berdasarkan pengalaman karier dan kualifikasi saya.",
@@ -250,7 +248,7 @@ export const translations = {
         "Rekomendasi Program",
         "Dukungan Aplikasi",
         "Bantuan Berkelanjutan",
-        "Penerbitan & Verifikasi Gelar",
+        "Penerbitan dan Verifikasi Gelar",
       ],
       howItWorksDescriptions: [
         "Kami akan mendiskusikan tujuan pendidikan dan latar belakang profesional Anda.",
@@ -268,9 +266,7 @@ export const translations = {
         { title: "Kualifikasi Minimal SLTA" },
         { title: "Kompetensi yang Mapan" },
       ],
-      partnersTitle: "Institusi Mitra",
-      partnersDescription: "Kami bekerja dengan universitas terakreditasi nasional dan internasional yang berkomitmen mengakui pengalaman profesional melalui kerangka RPL.",
-      partnersHeading: "Mitra Universitas Kami",
+
       whyChooseTitle: "Mengapa Memilih International.degree",
       whyChooseList: [
         { title: "Pengakuan Berbasis RPL", description: "Gelar Anda berdasarkan pengalaman profesional. Tanpa harus duduk di kelas." },
@@ -280,7 +276,7 @@ export const translations = {
         { title: "Konsultasi Personal", description: "Penasihat akademik khusus membimbing Anda di setiap langkah." },
         { title: "Kualitas Terjangkau", description: "Gelar berkualitas dengan biaya terjangkau. Nilai nyata untuk profesional mapan." },
       ],
-      certificateTitle: "Akreditasi & Sertifikasi",
+      certificateTitle: "Akreditasi dan Sertifikasi",
       certificateDescription: "Institusi mitra kami memiliki akreditasi dan sertifikasi internasional yang mencerminkan komitmen terhadap standar akademik global.",
       faqTitle: "Pertanyaan yang Sering Diajukan",
       finalCTA: "Mulai Perjalanan Gelar Anda Hari Ini",
@@ -288,16 +284,16 @@ export const translations = {
     },
     seo: {
       home: {
-        title: "Program RPL untuk Profesional Senior. Gelar Cepat, Terakreditasi (A) & Internasional (EAO)",
-        description: "Konversi pengalaman kerja profesional jadi gelar S1, S2, S3. Diakui nasional (Akreditasi A) dan internasional (EAO). Cepat, tanpa kuliah, biaya terjangkau. Untuk profesional senior dan eksekutif. Klik WA.",
+        title: "Program RPL untuk Profesional Senior – Cepat, Terakreditasi dan Internasional",
+        description: "Konversi pengalaman kerja jadi gelar S1, S2, S3. Diakui nasional (A) dan internasional (EAO). Cepat, tanpa kuliah, biaya terjangkau. Untuk profesional senior. Klik WA.",
       },
       about: {
-        title: "Tentang. Program RPL untuk Profesional Senior dan Eksekutif",
-        description: "Kami membantu profesional senior mendapatkan gelar melalui RPL. Terakreditasi nasional (A) dan diakui internasional (EAO). Dirancang untuk eksekutif sibuk. Konsultasi via WhatsApp.",
+        title: "Tentang – Program RPL untuk Profesional Senior",
+        description: "Kami membantu profesional senior dapatkan gelar melalui RPL. Terakreditasi nasional (A) dan diakui internasional (EAO). Untuk eksekutif sibuk. Konsultasi via WhatsApp.",
       },
       programs: {
-        title: "Program Gelar RPL. Terakreditasi (A) & Internasional (EAO) untuk Profesional",
-        description: "Lihat program gelar RPL untuk profesional senior. Penyelesaian cepat, terakreditasi nasional (A) dan diakui internasional (EAO). Berdasarkan pengalaman karier dan keahlian Anda.",
+        title: "Program Gelar RPL – Terakreditasi (A) dan Internasional (EAO)",
+        description: "Lihat program gelar RPL untuk profesional senior. Cepat, terakreditasi nasional (A) dan diakui internasional (EAO). Berdasarkan pengalaman karier Anda.",
       },
       programDetail: {
         titleSuffix: "Program RPL untuk Profesional | International.degree",
@@ -351,7 +347,7 @@ export const translations = {
         "Rekomendasi Program",
         "Dukungan Aplikasi",
         "Bantuan Berkelanjutan",
-        "Penerbitan & Verifikasi Gelar",
+        "Penerbitan dan Verifikasi Gelar",
       ],
       processDescriptions: [
         "Kami akan mendiskusikan tujuan pendidikan dan latar belakang profesional Anda.",

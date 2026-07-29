@@ -34,11 +34,13 @@ export async function generateMetadata() {
       type: "website",
       locale: lang === "id" ? "id_ID" : "en_US",
       siteName: "International.degree",
+      images: [{ url: "/img/hero.jpg", width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
       title: t.title,
       description: t.description,
+      images: ["/img/hero.jpg"],
     },
   };
 }
