@@ -9,7 +9,7 @@ International.degree
 Degree conferral service platform based on Recognition of Prior Learning (RPL)
 
 ### Primary Goal
-Help senior professionals and executives who are already successful in their careers obtain formal academic recognition for their professional experience — quickly, affordably, and through nationally accredited pathways.
+Help senior professionals and executives who are already successful in their careers obtain formal academic recognition for their professional experience — quickly, affordably, and through internationally accredited pathways.
 
 ### Target Users
 - Senior professionals aged 30+ with significant career experience but no formal degree
@@ -19,10 +19,10 @@ Help senior professionals and executives who are already successful in their car
 - Professionals who need a degree that matches their professional standing — fast, quality, and recognized
 
 ### Main Value Proposition
-- Senior professional? Get the degree your career deserves — fast, quality & nationally accredited (A & IAO)
+- Senior professional? Get the degree your career deserves — fast, quality & internationally accredited (IAO)
 - Your professional experience IS the degree — no classroom time required
 - 5 qualification paths: bachelor, master, doctoral, honorary, professional certificate
-- Nationally accredited (A) and internationally recognized (IAO) pathways
+- Internationally accredited (IAO) pathways
 - Designed for busy, financially established professionals — no time to waste, no need to study
 - WhatsApp-based consultation throughout the process
 - Market is mature (lots of experience, financial means) but lacks formal recognition (degree)
@@ -95,7 +95,7 @@ Behavior:
 #### Hero Section
 Content:
 - Main headline about degree completion (already in college, fast & affordable)
-- Short supporting description mentioning accreditation (A & IAO)
+- Short supporting description mentioning accreditation (IAO)
 - Professional image
 - Info via WhatsApp button
 
@@ -103,7 +103,7 @@ Suggested headline:
 > Already in College? Complete Your Degree Fast & Affordably
 
 Suggested description:
-> Nationally accredited (A) & internationally recognized (IAO) degrees based on your work experience and prior learning. Fast completion, affordable fees. Click WhatsApp for info.
+> Internationally accredited (IAO) degrees based on your work experience and prior learning. Fast completion, affordable fees. Click WhatsApp for info.
 
 CTA:
 - Info via WhatsApp
@@ -111,7 +111,7 @@ CTA:
 #### Trust Information
 Content:
 - RPL-Based Recognition — professional experience evaluated for degree conferral
-- Accredited Universities — degrees from nationally/internationally accredited partners
+- Accredited Universities — degrees from internationally accredited partners
 - Simple Process — initial consultation, document review, eligibility check
 
 Display:
@@ -123,7 +123,7 @@ Display:
 Content:
 - Service platform for higher degree conferral based on RPL
 - Open to individuals 30+ years, SLTA minimum, established competence
-- Awarded by nationally and internationally accredited universities
+- Awarded by internationally accredited universities
 
 CTA:
 - Learn More About Us
@@ -183,7 +183,7 @@ Requirements:
 #### Why Choose International.degree
 Content:
 - RPL-Based Conferral — degrees based on existing experience
-- Accredited Partners — universities with national/international accreditation
+- Accredited Partners — universities with international accreditation
 - Transparent Process — clear process without hidden surprises
 - Personal Consultation — dedicated advisor
 - Flexible Qualification Paths — bachelor's to honorary degrees and certificates
@@ -282,7 +282,7 @@ Content:
 Content:
 - Service platform for RPL-based higher degree conferral
 - Target applicants (30+, SLTA, established competence, or current college attendees)
-- Partnership with nationally/internationally accredited universities
+- Partnership with internationally accredited universities
 
 #### Our Role
 Content:
@@ -402,7 +402,7 @@ All primary CTA buttons open WhatsApp.
 - Institution logo
 - Country
 - Official website
-- Accreditation information (national/international)
+- Accreditation information (international)
 - Partnership description for RPL-based degree conferral
 
 ### Required Qualification Content

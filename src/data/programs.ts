@@ -21,8 +21,8 @@ export const qualificationTypes: QualificationType[] = [
     kind: { en: "Degree Program", id: "Program Gelar" },
     name: { en: "Bachelor Degree (B.Sc. / S1 equivalent)", id: "Bachelor Degree (B.Sc. / Setara S1)" },
     tagline: {
-      en: "Senior professional without a bachelor's degree? Earn the degree your career experience deserves. Fast, nationally accredited, and affordable.",
-      id: "Profesional senior tanpa gelar sarjana? Dapatkan gelar yang layak untuk pengalaman karier Anda. Cepat, terakreditasi nasional, dan terjangkau.",
+      en: "Senior professional without a bachelor's degree? Earn the degree your career experience deserves. Fast, internationally accredited, and affordable.",
+      id: "Profesional senior tanpa gelar sarjana? Dapatkan gelar yang layak untuk pengalaman karier Anda. Cepat, terakreditasi internasional, dan terjangkau.",
     },
     description: {
       en: "You have built a successful career through years of professional experience. Now earn a bachelor's degree that formally recognizes your expertise. No need to start from scratch. No need to sit through years of classes. Your existing experience is the foundation of your degree.",
@@ -36,14 +36,14 @@ export const qualificationTypes: QualificationType[] = [
       en: [
         "Degree based on professional experience. No classroom required.",
         "Fast completion designed for busy professionals.",
-        "Nationally accredited (A) and internationally recognized (IAO).",
+        "Internationally accredited (IAO).",
         "Affordable. Real value for established professionals.",
         "Personal academic advisor throughout the process.",
       ],
       id: [
         "Gelar berdasarkan pengalaman profesional. Tanpa harus ke kelas.",
         "Penyelesaian cepat dirancang untuk profesional sibuk.",
-        "Terakreditasi nasional (A) dan diakui internasional (IAO).",
+        "Terakreditasi internasional (IAO).",
         "Biaya terjangkau. Nilai nyata untuk profesional mapan.",
         "Penasihat akademik pribadi selama proses.",
       ],
@@ -77,14 +77,14 @@ export const qualificationTypes: QualificationType[] = [
       en: [
         "Master's degree based on your career achievements. No classroom hours.",
         "Fast track for busy executives and senior professionals.",
-        "Nationally accredited (A) and internationally recognized (IAO).",
+        "Internationally accredited (IAO).",
         "Zero disruption to your career.",
         "Dedicated advisor guides you through every step.",
       ],
       id: [
         "Gelar magister berdasarkan pencapaian karier Anda. Tanpa jam kelas.",
         "Jalur cepat untuk eksekutif dan profesional senior yang sibuk.",
-        "Terakreditasi nasional (A) dan diakui internasional (IAO).",
+        "Terakreditasi internasional (IAO).",
         "Tanpa mengganggu karier Anda.",
         "Penasihat khusus yang membimbing Anda di setiap langkah.",
       ],

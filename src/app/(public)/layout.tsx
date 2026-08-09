@@ -39,7 +39,7 @@ export default async function PublicLayout({
             telephone: settings.whatsappNumber,
             url: `https://wa.me/${settings.whatsappNumber}`,
           },
-          description: "Program RPL untuk Profesional Senior. Konversi pengalaman kerja jadi gelar S1, S2, S3 terakreditasi nasional (A) dan internasional (IAO).",
+          description: "Program RPL untuk Profesional Senior. Konversi pengalaman kerja jadi gelar S1, S2, S3 terakreditasi internasional (IAO).",
         }}
       />
       <JsonLd
@@ -48,7 +48,7 @@ export default async function PublicLayout({
           "@type": "WebSite",
           name: "International.degree",
           url: "https://international.degree",
-          description: "Program RPL untuk Profesional Senior. Gelar cepat, terakreditasi (A) dan internasional (IAO).",
+          description: "Program RPL untuk Profesional Senior. Gelar cepat, terakreditasi internasional (IAO).",
         }}
       />
     </>

@@ -11,7 +11,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 **Key messaging:**
 - Profesional senior? Dapatkan gelar yang layak untuk karier Anda — cepat, berkualitas & terakreditasi
-- Diakui: Akreditasi (A) nasional & internasional (IAO)
+- Diakui: Akreditasi internasional (IAO)
 - Berdasarkan pengalaman kerja, bukan belajar di kelas
 - Tidak punya waktu kuliah? Kami paham — proses cepat tanpa mengganggu karier
 - Klik WA untuk informasi
@@ -26,6 +26,6 @@ This version has breaking changes — APIs, conventions, and file structure may 
 **Key rules:**
 - NO prices displayed publicly — fees disclosed via WhatsApp only
 - All CTAs → WhatsApp
-- Copy pillars: "profesional senior", "tanpa kuliah", "akreditasi A & IAO", "cepat & berkualitas", "klik WA"
+- Copy pillars: "profesional senior", "tanpa kuliah", "akreditasi internasional (IAO)", "cepat & berkualitas", "klik WA"
 - Target: market sudah matang (experience + financial means) tapi belum ada pengakuan (degree)
 <!-- END:product-positioning -->

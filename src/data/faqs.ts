@@ -10,7 +10,7 @@ export const faqs: Record<FAQPage, FAQItem[]> = {
   home: [
     {
       question: { en: "Is international.degree a university?", id: "Apakah international.degree sebuah universitas?" },
-      answer: { en: "No. international.degree is a higher education facilitator and consultant. We assist professionals in accessing nationally and/or internationally accredited degree programs.", id: "Bukan. international.degree adalah fasilitator dan konsultan pendidikan tinggi. Kami membantu para profesional dalam mengakses program gelar yang terakreditasi nasional dan/atau internasional." },
+      answer: { en: "No. international.degree is a higher education facilitator and consultant. We assist professionals in accessing internationally accredited degree programs.", id: "Bukan. international.degree adalah fasilitator dan konsultan pendidikan tinggi. Kami membantu para profesional dalam mengakses program gelar yang terakreditasi internasional." },
       displayOrder: 1,
     },
     {
@@ -62,7 +62,7 @@ export const faqs: Record<FAQPage, FAQItem[]> = {
   about: [
     {
       question: { en: "Is international.degree a university?", id: "Apakah international.degree sebuah universitas?" },
-      answer: { en: "No. international.degree is a higher education facilitator and consultant. We assist professionals in accessing nationally and/or internationally accredited degree programs.", id: "Bukan. international.degree adalah fasilitator dan konsultan pendidikan tinggi. Kami membantu para profesional dalam mengakses program gelar yang terakreditasi nasional dan/atau internasional." },
+      answer: { en: "No. international.degree is a higher education facilitator and consultant. We assist professionals in accessing internationally accredited degree programs.", id: "Bukan. international.degree adalah fasilitator dan konsultan pendidikan tinggi. Kami membantu para profesional dalam mengakses program gelar yang terakreditasi internasional." },
       displayOrder: 1,
     },
     {

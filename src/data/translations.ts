@@ -8,8 +8,8 @@ export const translations = {
       login: "Login",
     },
     home: {
-      heroHeadline: "Senior Professional? Earn the Degree Your Career Deserves. Fast, Quality and Nationally Accredited.",
-      heroDescription: "Turn your career success and experience into a degree recognized nationally (Accreditation A) and internationally (IAO). No need to sit in a classroom. Fast, quality, and affordable. Click WhatsApp for info.",
+      heroHeadline: "Senior Professional? Earn the Degree Your Career Deserves. Fast, Quality and Internationally Accredited.",
+      heroDescription: "Turn your career success and experience into a degree recognized internationally (IAO). No need to sit in a classroom. Fast, quality, and affordable. Click WhatsApp for info.",
       heroCTA: "Info via WhatsApp",
       whatsappConsult: "Hello International.degree, I am a senior professional interested in earning a degree based on my career experience and qualifications.",
       whatsappAbout: "Hello International.degree, I would like to learn more about your RPL degree programs for experienced professionals.",
@@ -19,11 +19,11 @@ export const translations = {
       trustTitle: "Why International.degree",
       trustItems: [
         { title: "RPL-Based Recognition", description: "Your professional experience is evaluated through RPL. No need to sit in a classroom." },
-        { title: "Accredited Universities", description: "Degrees from nationally accredited (A) and internationally recognized (IAO) university partners." },
+        { title: "Accredited Universities", description: "Degrees from internationally accredited (IAO) university partners." },
         { title: "Simple 3-Step Process", description: "Submit your CV, choose your degree, complete the process. Designed for busy professionals." },
       ],
       aboutTitle: "About International.degree",
-      aboutDescription: "International.degree is a service platform that provides degree recognition based on the RPL framework. We believe senior professionals deserve formal recognition for their career achievements. Degrees are awarded by accredited university partners nationally and internationally.",
+      aboutDescription: "International.degree is a service platform that provides degree recognition based on the RPL framework. We believe senior professionals deserve formal recognition for their career achievements. Degrees are awarded by internationally accredited university partners.",
       aboutSubtext: "Turning your professional experience into academic recognition.",
       aboutLinkLabel: "Explore available degrees",
       aboutExtraDescription: "Open to senior professionals aged 30+ with a minimum SLTA qualification and established competence in their field. Designed for people who are busy and financially established. Get the degree that matches your professional standing without going back to school.",
@@ -61,7 +61,7 @@ export const translations = {
       whyChooseTitle: "Why Choose International.degree",
       whyChooseList: [
         { title: "RPL-Based Recognition", description: "Your degree is based on your professional experience. No classroom time required." },
-        { title: "Accredited Partners", description: "University partners with national accreditation (A) and international recognition (IAO)." },
+        { title: "Accredited Partners", description: "University partners with international accreditation (IAO)." },
         { title: "Designed for Busy Professionals", description: "Fast and flexible. Your time is valuable and we respect that." },
         { title: "Simple Process", description: "Just 3 steps: submit your CV, choose your degree, and you are done." },
         { title: "Personal Consultation", description: "A dedicated advisor guides you through every step of the process." },
@@ -76,15 +76,15 @@ export const translations = {
     seo: {
       home: {
         title: "RPL Degree for Senior Professionals – Fast, Accredited and International",
-        description: "Turn your professional experience into a nationally accredited degree. RPL program for senior professionals and executives. Fast, affordable, no classroom. Click WhatsApp.",
+        description: "Turn your professional experience into an internationally accredited (IAO) degree. RPL program for senior professionals and executives. Fast, affordable, no classroom. Click WhatsApp.",
       },
       about: {
         title: "About – RPL Degree Programs for Senior Professionals",
-        description: "We help senior professionals earn their degree through RPL. Nationally accredited (A) and internationally recognized (IAO). For busy executives. Consult via WhatsApp.",
+        description: "We help senior professionals earn their degree through RPL. Internationally accredited (IAO). For busy executives. Consult via WhatsApp.",
       },
       programs: {
-        title: "RPL Degree Programs – Accredited (A) and International (IAO)",
-        description: "Browse RPL degree programs for senior professionals. Fast, nationally accredited (A) and internationally recognized (IAO). Based on your career experience.",
+        title: "RPL Degree Programs – Internationally Accredited (IAO)",
+        description: "Browse RPL degree programs for senior professionals. Fast, internationally accredited (IAO). Based on your career experience.",
       },
       programDetail: {
         titleSuffix: "RPL Program for Professionals | International.degree",
@@ -120,7 +120,7 @@ export const translations = {
       pageTitle: "About International.degree",
       pageDescription: "Your partner in higher degree conferral through Recognition of Prior Learning (RPL).",
       storyTitle: "Our Story",
-      storyContent: "International.degree is a service platform that provides higher degree conferral based on the Recognition of Prior Learning (RPL) framework. We believe that professional experience deserves formal academic recognition. We work with nationally and internationally accredited universities to offer degree pathways for experienced professionals who are at least 30 years of age, hold a minimum SLTA qualification, and demonstrate established competence in their field.",
+      storyContent: "International.degree is a service platform that provides higher degree conferral based on the Recognition of Prior Learning (RPL) framework. We believe that professional experience deserves formal academic recognition. We work with internationally accredited universities to offer degree pathways for experienced professionals who are at least 30 years of age, hold a minimum SLTA qualification, and demonstrate established competence in their field.",
       roleTitle: "Our Role",
       roleList: [
         "Service platform connecting professionals with degree conferral pathways",
@@ -150,7 +150,7 @@ export const translations = {
         "Your final diploma or certificate is issued and verified directly by our accredited partner institution.",
       ],
       partnersTitle: "Partner Institution Information",
-      partnersModel: "International.degree partners with nationally and internationally accredited universities to provide degree conferral through the RPL framework. Each institution retains full authority over admission, degree conferral decisions, and academic standards.",
+      partnersModel: "International.degree partners with internationally accredited universities to provide degree conferral through the RPL framework. Each institution retains full authority over admission, degree conferral decisions, and academic standards.",
       institutionResponsibilities: "Set admission requirements, conduct RPL assessment, make degree conferral decisions, issue credentials.",
       ourResponsibilities: "Provide program information, assist with applications, facilitate communication, offer guidance and support.",
       verificationTitle: "Verification",
@@ -218,7 +218,7 @@ export const translations = {
     },
     home: {
       heroHeadline: "Profesional Senior? Dapatkan Gelar yang Layak untuk Karier Anda. Cepat, Berkualitas dan Terakreditasi.",
-      heroDescription: "Konversi pengalaman kerja dan kesuksesan karier Anda menjadi gelar yang diakui nasional (Akreditasi A) dan internasional (IAO). Tanpa harus duduk di kelas lagi. Cepat, berkualitas, biaya terjangkau. Klik WA untuk informasi.",
+      heroDescription: "Konversi pengalaman kerja dan kesuksesan karier Anda menjadi gelar yang diakui internasional (IAO). Tanpa harus duduk di kelas lagi. Cepat, berkualitas, biaya terjangkau. Klik WA untuk informasi.",
       heroCTA: "Info via WhatsApp",
       whatsappConsult: "Halo International.degree, saya seorang profesional senior yang tertarik mendapatkan gelar berdasarkan pengalaman karier dan kualifikasi saya.",
       whatsappAbout: "Halo International.degree, saya ingin tahu lebih lanjut tentang program gelar RPL untuk profesional senior.",
@@ -228,11 +228,11 @@ export const translations = {
       trustTitle: "Mengapa International.degree",
       trustItems: [
         { title: "Pengakuan Berbasis RPL", description: "Pengalaman profesional Anda dievaluasi melalui RPL. Tanpa harus duduk di kelas." },
-        { title: "Universitas Terakreditasi", description: "Gelar dari mitra universitas terakreditasi nasional (A) dan diakui internasional (IAO)." },
+        { title: "Universitas Terakreditasi", description: "Gelar dari mitra universitas terakreditasi internasional (IAO)." },
         { title: "Proses 3 Langkah", description: "Kirim CV, pilih gelar, selesaikan proses. Dirancang untuk profesional sibuk." },
       ],
       aboutTitle: "Tentang International.degree",
-      aboutDescription: "International.degree adalah platform layanan yang menyediakan pengakuan gelar berdasarkan kerangka RPL. Kami percaya profesional senior layak mendapatkan pengakuan formal atas pencapaian karier mereka. Gelar diberikan oleh mitra universitas terakreditasi nasional dan internasional.",
+      aboutDescription: "International.degree adalah platform layanan yang menyediakan pengakuan gelar berdasarkan kerangka RPL. Kami percaya profesional senior layak mendapatkan pengakuan formal atas pencapaian karier mereka. Gelar diberikan oleh mitra universitas terakreditasi internasional.",
       aboutSubtext: "Mengubah pengalaman profesional Anda menjadi pengakuan akademik.",
       aboutLinkLabel: "Jelajahi gelar yang tersedia",
       aboutExtraDescription: "Terbuka untuk profesional senior usia 30+ dengan kualifikasi minimal SLTA dan kompetensi yang mapan di bidangnya. Dirancang untuk mereka yang sibuk dan mapan secara finansial. Dapatkan gelar yang sesuai dengan posisi profesional Anda tanpa harus kembali ke bangku kuliah.",
@@ -270,7 +270,7 @@ export const translations = {
       whyChooseTitle: "Mengapa Memilih International.degree",
       whyChooseList: [
         { title: "Pengakuan Berbasis RPL", description: "Gelar Anda berdasarkan pengalaman profesional. Tanpa harus duduk di kelas." },
-        { title: "Mitra Terakreditasi", description: "Mitra universitas dengan akreditasi nasional (A) dan pengakuan internasional (IAO)." },
+        { title: "Mitra Terakreditasi", description: "Mitra universitas dengan akreditasi internasional (IAO)." },
         { title: "Untuk Profesional Sibuk", description: "Cepat dan fleksibel. Waktu Anda berharga dan kami menghargainya." },
         { title: "Proses Sederhana", description: "Hanya 3 langkah: kirim CV, pilih gelar, selesai. Semudah itu." },
         { title: "Konsultasi Personal", description: "Penasihat akademik khusus membimbing Anda di setiap langkah." },
@@ -285,15 +285,15 @@ export const translations = {
     seo: {
       home: {
         title: "Program RPL untuk Profesional Senior – Cepat, Terakreditasi dan Internasional",
-        description: "Konversi pengalaman kerja jadi gelar S1, S2, S3. Diakui nasional (A) dan internasional (IAO). Cepat, tanpa kuliah, biaya terjangkau. Untuk profesional senior. Klik WA.",
+        description: "Konversi pengalaman kerja jadi gelar S1, S2, S3. Diakui internasional (IAO). Cepat, tanpa kuliah, biaya terjangkau. Untuk profesional senior. Klik WA.",
       },
       about: {
         title: "Tentang – Program RPL untuk Profesional Senior",
-        description: "Kami membantu profesional senior dapatkan gelar melalui RPL. Terakreditasi nasional (A) dan diakui internasional (IAO). Untuk eksekutif sibuk. Konsultasi via WhatsApp.",
+        description: "Kami membantu profesional senior dapatkan gelar melalui RPL. Terakreditasi internasional (IAO). Untuk eksekutif sibuk. Konsultasi via WhatsApp.",
       },
       programs: {
-        title: "Program Gelar RPL – Terakreditasi (A) dan Internasional (IAO)",
-        description: "Lihat program gelar RPL untuk profesional senior. Cepat, terakreditasi nasional (A) dan diakui internasional (IAO). Berdasarkan pengalaman karier Anda.",
+        title: "Program Gelar RPL – Terakreditasi Internasional (IAO)",
+        description: "Lihat program gelar RPL untuk profesional senior. Cepat, terakreditasi internasional (IAO). Berdasarkan pengalaman karier Anda.",
       },
       programDetail: {
         titleSuffix: "Program RPL untuk Profesional | International.degree",
@@ -329,7 +329,7 @@ export const translations = {
       pageTitle: "Tentang International.degree",
       pageDescription: "Mitra Anda dalam pemberian gelar tinggi melalui Recognition of Prior Learning (RPL).",
       storyTitle: "Cerita Kami",
-      storyContent: "International.degree adalah platform layanan yang menyediakan pemberian gelar tinggi berdasarkan kerangka Recognition of Prior Learning (RPL). Kami percaya bahwa pengalaman profesional layak mendapatkan pengakuan akademik formal. Kami bekerja dengan universitas terakreditasi nasional dan internasional untuk menawarkan jalur gelar bagi profesional berpengalaman yang berusia minimal 30 tahun, memiliki kualifikasi minimal SLTA, dan menunjukkan kompetensi yang mapan di bidangnya.",
+      storyContent: "International.degree adalah platform layanan yang menyediakan pemberian gelar tinggi berdasarkan kerangka Recognition of Prior Learning (RPL). Kami percaya bahwa pengalaman profesional layak mendapatkan pengakuan akademik formal. Kami bekerja dengan universitas terakreditasi internasional untuk menawarkan jalur gelar bagi profesional berpengalaman yang berusia minimal 30 tahun, memiliki kualifikasi minimal SLTA, dan menunjukkan kompetensi yang mapan di bidangnya.",
       roleTitle: "Peran Kami",
       roleList: [
         "Platform layanan yang menghubungkan profesional dengan jalur pemberian gelar",
@@ -359,7 +359,7 @@ export const translations = {
         "Ijazah atau sertifikat akhir Anda diterbitkan dan diverifikasi langsung oleh institusi mitra terakreditasi kami.",
       ],
       partnersTitle: "Informasi Institusi Mitra",
-      partnersModel: "International.degree bermitra dengan universitas terakreditasi nasional dan internasional untuk menyediakan pemberian gelar melalui kerangka RPL. Setiap institusi mempertahankan wewenang penuh atas penerimaan, keputusan pemberian gelar, dan standar akademik.",
+      partnersModel: "International.degree bermitra dengan universitas terakreditasi internasional untuk menyediakan pemberian gelar melalui kerangka RPL. Setiap institusi mempertahankan wewenang penuh atas penerimaan, keputusan pemberian gelar, dan standar akademik.",
       institutionResponsibilities: "Menetapkan persyaratan penerimaan, melakukan penilaian RPL, membuat keputusan pemberian gelar, menerbitkan kredensial.",
       ourResponsibilities: "Menyediakan informasi program, membantu aplikasi, memfasilitasi komunikasi, menawarkan panduan dan dukungan.",
       verificationTitle: "Verifikasi",
