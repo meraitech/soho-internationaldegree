@@ -19,10 +19,10 @@ Help senior professionals and executives who are already successful in their car
 - Professionals who need a degree that matches their professional standing — fast, quality, and recognized
 
 ### Main Value Proposition
-- Senior professional? Get the degree your career deserves — fast, quality & nationally accredited (A & EAO)
+- Senior professional? Get the degree your career deserves — fast, quality & nationally accredited (A & IAO)
 - Your professional experience IS the degree — no classroom time required
 - 5 qualification paths: bachelor, master, doctoral, honorary, professional certificate
-- Nationally accredited (A) and internationally recognized (EAO) pathways
+- Nationally accredited (A) and internationally recognized (IAO) pathways
 - Designed for busy, financially established professionals — no time to waste, no need to study
 - WhatsApp-based consultation throughout the process
 - Market is mature (lots of experience, financial means) but lacks formal recognition (degree)
@@ -95,7 +95,7 @@ Behavior:
 #### Hero Section
 Content:
 - Main headline about degree completion (already in college, fast & affordable)
-- Short supporting description mentioning accreditation (A & EAO)
+- Short supporting description mentioning accreditation (A & IAO)
 - Professional image
 - Info via WhatsApp button
 
@@ -103,7 +103,7 @@ Suggested headline:
 > Already in College? Complete Your Degree Fast & Affordably
 
 Suggested description:
-> Nationally accredited (A) & internationally recognized (EAO) degrees based on your work experience and prior learning. Fast completion, affordable fees. Click WhatsApp for info.
+> Nationally accredited (A) & internationally recognized (IAO) degrees based on your work experience and prior learning. Fast completion, affordable fees. Click WhatsApp for info.
 
 CTA:
 - Info via WhatsApp
